@@ -38,7 +38,7 @@ public class sketch {
       for (int j = 0; j < jaggedArrayScores2[i].length; j++) {
         for (int k = 0; k < jaggedArrayScores2[i][j].length; k++) {
           System.out.println(
-            "Please enter balance for - College " + (i + 1) + 
+            "Enter score for - College " + (i + 1) + 
             ", Class " + (j + 1) +
             ", Student " + (k + 1) +
             ":"
@@ -51,7 +51,7 @@ public class sketch {
 
     System.out.println();
 
-    // Printing the account balances of customers:
+    // Printing the scores of all students:
     for (int i = 0; i < jaggedArrayScores2.length; i++) {
       for (int j = 0; j < jaggedArrayScores2[i].length; j++) {
         for (int k = 0; k < jaggedArrayScores2[i][j].length; k++) {
