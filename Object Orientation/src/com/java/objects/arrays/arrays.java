@@ -177,6 +177,12 @@ public class arrays {
       }
     }
 
+    // +++++++++++++++++
+    // 3D Array Examples
+    // +++++++++++++++++
+
+    
+
     scan.close();
   }
 }
