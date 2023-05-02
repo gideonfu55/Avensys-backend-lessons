@@ -22,7 +22,7 @@ public class sketch {
     }
 
     System.out.println();
-    System.out.println("1st array elements are:");
+    System.out.println("Array A elements are:");
 
     for (int j = 0; j < a.length; j++) {
       System.out.print(a[j] + " ");
@@ -36,11 +36,37 @@ public class sketch {
 
     System.out.println();
 
+    String[] ref = new String[a.length];
+
+    // for (int i = 0; i < a.length; i++) {
+    //   if (a[i] == b) {
+    //     System.out.println("The index found for this value is " + i);
+    //   } else {
+    //     System.out.println("The key is not found in " + i);
+    //   }
+    // }
+
     for (int i = 0; i < a.length; i++) {
       if (a[i] == b) {
-        System.out.println("The index found for this value is " + i);
-      } else {
-        System.out.println("The key is not found in " + i);
+        ref[i] = Integer.toString(i);
+      }
+    }
+
+    int count = 0;
+    for (String letter : ref) {
+      if (letter == null) {
+        count++;
+      }
+    }
+
+    if (count == a.length) {
+      System.out.println("The value can't be found in Array A.");
+    } else {
+      System.out.print("The index(es) matched to the value of " + b + " in Array A: ");
+      for (String letter : ref) {
+        if (letter != null) {
+          System.out.print(letter + ", ");
+        }
       }
     }
 
