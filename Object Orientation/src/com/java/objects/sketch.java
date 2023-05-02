@@ -7,35 +7,60 @@ public class sketch {
 
     Scanner scan = new Scanner(System.in);
 
-    //Practice on 3D Arrays - Student Scores of Classes in Colleges:
-    int collegeStudentScores[][][] = new int[3][3][4];
+    int[][][] jaggedArrayBank = new int[3][][];
 
-    // Getting the scores of 6 students in 5 classes:
-    System.out.println("Enter the marks of all students:");
+    // For determining the number of bank branches for each bank:
+    jaggedArrayBank[0] = new int[3][];
+    jaggedArrayBank[1] = new int[4][];
+    jaggedArrayBank[2] = new int[2][];
+
+    // Determining the number of customers in each branch:
+    // Bank A:
+    jaggedArrayBank[0][0] = new int[4];
+    jaggedArrayBank[0][1] = new int[2];
+    jaggedArrayBank[0][2] = new int[3];
+
+    // Bank B:
+    jaggedArrayBank[1][0] = new int[1];
+    jaggedArrayBank[1][1] = new int[2];
+    jaggedArrayBank[1][2] = new int[4];
+    jaggedArrayBank[1][3] = new int[2];
+
+    // Bank C:
+    jaggedArrayBank[2][0] = new int[5];
+    jaggedArrayBank[2][1] = new int[2];
+
+    // In this case, there are different sizes of each bank account:
+    System.out.println("Enter the account balance of all bank customers:");
     System.out.println();
 
-    for (int i = 0; i < collegeStudentScores.length; i++) {
-      for (int j = 0; j < collegeStudentScores[i].length; j++) {
-        for (int k = 0; k < collegeStudentScores[i][j].length; k++) {
+    for (int i = 0; i < jaggedArrayBank.length; i++) {
+      for (int j = 0; j < jaggedArrayBank[i].length; j++) {
+        for (int k = 0; k < jaggedArrayBank[i][j].length; k++) {
           System.out.println(
-            "Please enter score for - College " + (i + 1) + 
-            ", Class " + (j + 1) + 
-            ", Student " + (k + 1) + ":");
-          collegeStudentScores[i][j][k] = scan.nextInt();
+            "Please enter balance for - Bank " + (i + 1) + 
+            ", Branch " + (j + 1) + 
+            ", Customer " + (k + 1) + 
+            ":"
+          );
+          jaggedArrayBank[i][j][k] = scan.nextInt();
         }
+
       }
     }
 
     System.out.println();
 
-    // Printing the scores of students:
-    for (int i = 0; i < collegeStudentScores.length; i++) {
-      for (int j = 0; j < collegeStudentScores[i].length; j++) {
-        for (int k = 0; k < collegeStudentScores[i][j].length; k++) {
+    // Printing the account balances of customers:
+    for (int i = 0; i < jaggedArrayBank.length; i++) {
+      for (int j = 0; j < jaggedArrayBank[i].length; j++) {
+        for (int k = 0; k < jaggedArrayBank[i][j].length; k++) {
           System.out.println(
-            "For College " + (i + 1) + 
-            ", Class " + (j + 1) + 
-            ", Student " + (k + 1) + ", the score is: " + collegeStudentScores[i][j][k] + ".");
+            "For Bank " + (i + 1) + 
+            ", Branch " + (j + 1) +
+            ", Customer " + (k + 1) + 
+            ", the account balance is: $" + jaggedArrayBank[i][j][k] + "."
+          );
         }
       }
     }
