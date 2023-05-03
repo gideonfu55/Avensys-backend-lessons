@@ -40,6 +40,24 @@ public class strings {
       System.out.println("Both Strings are equal.");
     }
 
+    // Other build-in methods for Strings:
+    String methodsTestString = new String("Super Mario hates mushrooms.");
+    System.out.println("*******************************");
+    System.out.println(methodsTestString.toUpperCase()); // THIS IS A JAVA CLASS
+    System.out.println("*******************************");
+    System.out.println(methodsTestString.toLowerCase()); // this is a java class
+    System.out.println("*******************************");
+    System.out.println(methodsTestString.contains("Class")); // true
+    System.out.println(methodsTestString.contains("python")); // false
+    System.out.println("*******************************");
+    System.out.println(methodsTestString.indexOf('u')); // 
+    System.out.println("*******************************");
+    System.out.println(methodsTestString.charAt(7)); // 
+    System.out.println("*******************************");
+    System.out.println(methodsTestString.substring(8)); //
+    System.out.println("*******************************");
+    System.out.println(methodsTestString.substring(8, 12)); //
+
   }
   
 }
