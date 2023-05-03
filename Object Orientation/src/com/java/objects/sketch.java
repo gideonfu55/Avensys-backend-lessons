@@ -62,10 +62,10 @@ public class sketch {
     if (count == a.length) {
       System.out.println("The value can't be found in Array A.");
     } else {
-      System.out.print("The index(es) matched to the value of " + b + " in Array A: ");
+      System.out.print("The index(es) matched to the value of " + b + " in Array A: \n");
       for (String letter : ref) {
         if (letter != null) {
-          System.out.println(letter + ", ");
+          System.out.print(letter + ", ");
         }
       }
     }
