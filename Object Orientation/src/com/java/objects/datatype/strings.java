@@ -13,6 +13,17 @@ public class strings {
       System.out.println("References are not equal.");
     }
 
+    String s3 = "Gideon";
+    String s4 = new String("Gideon");
+
+    // Understanding how the 2 variables are reference pointers that point to the
+    // same object:
+    if (s3.equals(s4)) {
+      System.out.println("References are equal.");
+    } else {
+      System.out.println("References are not equal.");
+    }
+
   }
   
 }
