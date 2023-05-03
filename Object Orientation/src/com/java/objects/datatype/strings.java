@@ -24,6 +24,10 @@ public class strings {
       System.out.println("References are not equal.");
     }
 
+    // s1 += "hero";
+    String s5 = s1.concat("hero");
+    System.out.println(s5);
+
   }
   
 }
