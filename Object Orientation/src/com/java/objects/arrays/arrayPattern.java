@@ -63,7 +63,7 @@ public class arrayPattern {
      * Find index of value(s) in an array:
      */
 
-    System.out.println("Enter the length of the array:");
+    System.out.println("\nEnter the length of the array:");
     int len2 = scan.nextInt();
 
     int[] c = new int[len2];
