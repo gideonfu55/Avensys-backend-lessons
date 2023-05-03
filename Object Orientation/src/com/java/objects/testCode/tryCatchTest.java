@@ -1,4 +1,4 @@
-package com.java.objects;
+package com.java.objects.testCode;
 
 public class tryCatchTest {
   public static void main(String[] args) {
