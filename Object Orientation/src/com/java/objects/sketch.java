@@ -65,7 +65,7 @@ public class sketch {
       System.out.print("The index(es) matched to the value of " + b + " in Array A: ");
       for (String letter : ref) {
         if (letter != null) {
-          System.out.print(letter + ", ");
+          System.out.println(letter + ", ");
         }
       }
     }
