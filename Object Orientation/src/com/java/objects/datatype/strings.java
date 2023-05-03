@@ -28,6 +28,18 @@ public class strings {
     String s5 = s1.concat("hero");
     System.out.println(s5);
 
+    // Using the compareTo method:
+    String s6 = "Sachin";
+    String s7 = "Sourav";
+
+    if (s6.compareTo(s7) > 0) {
+      System.out.println("String 6 is greater than String 7");
+    } else if (s6.compareTo(s7) < 0) {
+      System.out.println("String 7 is greater than String 6");
+    } else {
+      System.out.println("Both Strings are equal.");
+    }
+
   }
   
 }
