@@ -95,6 +95,74 @@ public class strings {
     System.out.println(sbuild);
     System.out.println(sbuild.capacity());
 
+    /*
+     * Methods for StringBuilders and StringBuffers (actually similar to String)
+     * 
+     */
+
+    StringBuilder sbuilderEx = new StringBuilder("Java is fun");
+    StringBuilder sbuilderEx2 = new StringBuilder("java is fun");
+
+    System.out.println("++++++++++++++++++++++++++++++++");
+    System.out.println("1. Equals method:");
+    if (sbuilderEx.equals(sbuilderEx2)) {
+      System.out.println("The strings are equal.");
+    } else {
+      System.out.println("The strings are not equal.");
+    }
+
+    System.out.println("++++++++++++++++++++++++++++++++");
+    System.out.println("2. compareTo method:");
+    if (sbuilderEx.compareTo(sbuilderEx2) > 0) {
+      System.out.println("sbuilderEx is greater than sbuilderEx2.");
+    } else if (sbuilderEx.compareTo(sbuilderEx2) < 0) {
+      System.out.println("sbuilderEx2 is greater than sbuilderEx.");
+    } else {
+      System.out.println("Both are equal.");
+    }
+
+    System.out.println("++++++++++++++++++++++++++++++++");
+    System.out.println("3. indexOf method:");
+    System.out.println(sbuilderEx.indexOf("a", 0));
+
+    System.out.println("++++++++++++++++++++++++++++++++");
+    System.out.println("4. charAt method:");
+    System.out.println(sbuilderEx.charAt(5));
+
+    System.out.println("++++++++++++++++++++++++++++++++");
+    System.out.println("5. subString all method:");
+    System.out.println(sbuilderEx.substring(0));
+
+    System.out.println("++++++++++++++++++++++++++++++++");
+    System.out.println("6. subString selection method:");
+    System.out.println(sbuilderEx.substring(0, 4));
+
+    System.out.println("++++++++++++++++++++++++++++++++");
+    System.out.println("7. append method:");
+    System.out.println(sbuilderEx.append(". We enjoy writing Java."));
+
+    System.out.println("++++++++++++++++++++++++++++++++");
+    System.out.println("8. insert method:");
+    System.out.println(sbuilderEx.insert(7, " very"));
+
+    System.out.println("++++++++++++++++++++++++++++++++");
+    System.out.println("9. reverse method:");
+    System.out.println(sbuilderEx.reverse());
+
+    System.out.println("++++++++++++++++++++++++++++++++");
+    System.out.println("10. ensureCapacity method:");
+    StringBuilder sbuilderEx3 = new StringBuilder();
+    sbuilderEx3.ensureCapacity(50);
+    System.out.println(sbuilderEx3.capacity());
+
+    System.out.println("++++++++++++++++++++++++++++++++");
+    System.out.println("11. length method:");
+    System.out.println(sbuilderEx2.length());
+
+    System.out.println("++++++++++++++++++++++++++++++++");
+    System.out.println("12. capacity method:");
+    System.out.println(sbuilderEx.capacity());
+
   }
   
 }
