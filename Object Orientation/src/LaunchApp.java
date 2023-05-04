@@ -1,4 +1,4 @@
-package com.java.objects;
+
 
 import com.java.objects.classes.Fan;
 
