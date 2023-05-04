@@ -55,7 +55,7 @@ public class sketch {
     System.out.println("++++++++++++++++++++++++++++++++");
     System.out.println("10. ensureCapacity method:");
     StringBuilder sb3 = new StringBuilder();
-    sb3.ensureCapacity(10);
+    sb3.ensureCapacity(50);
     System.out.println(sb3.capacity());
 
     System.out.println("++++++++++++++++++++++++++++++++");
