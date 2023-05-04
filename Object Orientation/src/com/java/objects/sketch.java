@@ -38,7 +38,7 @@ public class sketch {
 
     System.out.println("++++++++++++++++++++++++++++++++");
     System.out.println("6. subString selection method:");
-    System.out.println(sb.substring(0, 3));
+    System.out.println(sb.substring(0, 4));
 
     System.out.println("++++++++++++++++++++++++++++++++");
     System.out.println("7. append method:");
