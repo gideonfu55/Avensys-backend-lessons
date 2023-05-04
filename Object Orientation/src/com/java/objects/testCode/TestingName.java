@@ -4,7 +4,7 @@ package com.java.objects.testCode;
   
 // }
 
-public class Testing1 {
+public class TestingName {
 
   int x;
   int y;
@@ -18,9 +18,9 @@ public class Testing1 {
   }
 }
 
-class Testing1_methods {
+class TestingName_methods {
   public static void main(String args[]) {
-    Testing1 obj = new Testing1();
+    TestingName obj = new TestingName();
     // int a = 0;
     obj.add(6);
     System.out.println(obj.x);
