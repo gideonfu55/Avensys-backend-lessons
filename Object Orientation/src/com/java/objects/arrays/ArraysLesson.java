@@ -2,7 +2,7 @@ package com.java.objects.arrays;
 
 import java.util.Scanner;
 
-public class arrays {
+public class ArraysLesson {
   public static void main(String[] args) {
 
     Scanner scan = new Scanner(System.in);

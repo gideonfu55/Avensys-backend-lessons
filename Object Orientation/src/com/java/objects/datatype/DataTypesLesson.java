@@ -1,6 +1,6 @@
 package com.java.objects.datatype;
 
-public class dataTypes {
+public class DataTypesLesson {
 
   public static void main(String[] args) {
     

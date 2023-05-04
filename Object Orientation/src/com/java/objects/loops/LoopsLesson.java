@@ -2,7 +2,7 @@ package com.java.objects.loops;
 
 import java.util.Scanner;
 
-public class loops {
+public class LoopsLesson {
   public static void main(String[] args) {
     
     Scanner scan = new Scanner(System.in);

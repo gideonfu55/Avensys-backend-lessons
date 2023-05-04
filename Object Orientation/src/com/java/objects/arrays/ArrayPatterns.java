@@ -2,7 +2,7 @@ package com.java.objects.arrays;
 
 import java.util.Scanner;
 
-public class arrayPattern {
+public class ArrayPatterns {
   public static void main(String[] args) {
 
     Scanner scan = new Scanner(System.in);

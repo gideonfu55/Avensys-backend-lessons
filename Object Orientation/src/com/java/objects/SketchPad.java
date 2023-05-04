@@ -1,6 +1,6 @@
 package com.java.objects;
 
-public class sketch {
+public class SketchPad {
   public static void main(String[] args) {
 
     
