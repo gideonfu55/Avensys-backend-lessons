@@ -21,7 +21,7 @@ public class Testing1 {
 class Testing1_methods {
   public static void main(String args[]) {
     Testing1 obj = new Testing1();
-    int a = 0;
+    // int a = 0;
     obj.add(6);
     System.out.println(obj.x);
   }
