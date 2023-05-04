@@ -1,4 +1,5 @@
 import com.java.objects.classes.Bird;
+import com.java.objects.classes.Fan;
 import com.java.objects.classes.Monitor;
 
 public class App {
@@ -30,5 +31,16 @@ public class App {
 
         System.out.println();
         System.out.println(samsung);
+
+        // Objects exercise:
+        Fan panasonic = new Fan("Black", "Panasonic", 4);
+        Fan samsungNew = new Fan("Green", "Samsung", 4);
+        Fan mitsubishi = new Fan("Black", "Mitsubishi", 4);
+
+        System.out.println();
+
+        panasonic.rotate();
+        samsungNew.stop();
+        mitsubishi.blowAir();
     }
 }
