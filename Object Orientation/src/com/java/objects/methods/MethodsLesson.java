@@ -1,7 +1,11 @@
 package com.java.objects.methods;
 
+import java.util.Scanner;
+
 public class MethodsLesson {
   public static void main(String[] args) {
+
+    Scanner scan = new Scanner(System.in);
 
     Calculator myCal = new Calculator();
 
@@ -13,6 +17,36 @@ public class MethodsLesson {
 
     System.out.println(resultMultiple);
     System.out.println(resultDivide);
-    
+
+    /*
+     * In class assignment:
+     * Write program to take the name as input and check whether the name
+     * contains 's' or not.
+     * 
+     * Solution:
+     * 1. Create method check() which should accept a String name as the
+     * parameter
+     * 2. It should return a boolean value.
+     * 
+     */
+
+    // 1.
+    System.out.println("Please enter name to check:");
+    String name = scan.nextLine();
+
+    boolean result = checkName(name);
+
+    if (result == true) {
+    System.out.println("The name you entered contains \"s\".");
+    } else {
+    System.out.println("The name you entered does not contains \"s\".");
+    }
+
+    scan.close();
+  }
+
+  public static boolean checkName(String name) {
+    boolean result = (name.toLowerCase().contains("s")) ? true : false;
+    return result;
   }
 }
