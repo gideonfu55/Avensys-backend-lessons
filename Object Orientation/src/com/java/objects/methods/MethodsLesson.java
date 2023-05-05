@@ -42,11 +42,33 @@ public class MethodsLesson {
     System.out.println("The name you entered does not contains \"s\".");
     }
 
+    // String name checker assignment:
+    System.out.println("Please enter first name to check:");
+    String name2 = scan.nextLine();
+
+    System.out.println("Please enter second name to check:");
+    String name3 = scan.nextLine();
+
+    boolean result2 = checkStrings(name2, name3);
+
+    System.out.println();
+
+    if (result2 == true) {
+      System.out.println("The 2 names entered are equal.");
+    } else {
+      System.out.println("The 2 names entered are not equal.");
+    }
+
     scan.close();
   }
 
   public static boolean checkName(String name) {
     boolean result = (name.toLowerCase().contains("s")) ? true : false;
+    return result;
+  }
+
+  public static boolean checkStrings(String a, String b) {
+    boolean result = (a.equalsIgnoreCase(b)) ? true : false;
     return result;
   }
 }
