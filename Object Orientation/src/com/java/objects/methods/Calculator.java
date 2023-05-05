@@ -51,7 +51,7 @@ public class Calculator {
    * stringName.substring(1);
    * stringName.substring(1, 5);
    * 
-   * - The two methods above are actually perform different tasks based on Method Overloading.
+   * - There are actually two substring methods performing 2 different tasks based on Method Overloading.
    */
 
   public int addOverload (int a, int b) {
