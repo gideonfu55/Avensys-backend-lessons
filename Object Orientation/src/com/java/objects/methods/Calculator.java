@@ -47,6 +47,11 @@ public class Calculator {
    * 2. Types of the arguments
    * 3. Order of the arguments
    * 
+   * Similar example: substring()
+   * stringName.substring(1);
+   * stringName.substring(1, 5);
+   * 
+   * - The two methods above are actually perform different tasks based on Method Overloading.
    */
 
   public int addOverload (int a, int b) {
