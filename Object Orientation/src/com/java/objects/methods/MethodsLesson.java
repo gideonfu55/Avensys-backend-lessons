@@ -8,8 +8,6 @@ public class MethodsLesson {
     myCal.add();
     myCal.subtract(20, 30);
 
-    int a = 'c';
-
     int resultMultiple = myCal.multiply();
     int resultDivide = myCal.divide('a', 20);
 
