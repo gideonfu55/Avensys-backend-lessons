@@ -29,7 +29,13 @@ public class Calculator {
 
   // Type 4: Gets input and produce output
   public int divide(int a, int b) {
-    int c = a / b;
+    int c = 0;
+    if (Integer.class.isInstance(a) && Integer.class.isInstance(b)) {
+      c = a / b;
+    } else {
+      System.out.println("Please provide valid numbers.");
+    }
+
     return c;
   }
 
