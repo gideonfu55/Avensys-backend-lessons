@@ -14,6 +14,9 @@ public class LaunchApp {
 
     Student student = new Student("Bruce Wayne", 25, 100, "Gotham");
     System.out.println(student);
+
+    Student student2 = new Student();
+    System.out.println(student2);
     
   }
 }
