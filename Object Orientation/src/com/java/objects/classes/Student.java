@@ -14,6 +14,10 @@ public class Student {
     this.city = city;
   }
 
+  public Student() {
+    
+  }
+
   public void play() {
     System.out.println("Student is having fun.");
   }
