@@ -10,6 +10,8 @@ public class LaunchApp {
 
     System.out.println("Book 1 has " + pageNum + " pages.");
 
+    System.out.println();
+    
     FanTwo fan1 = new FanTwo();
     fan1.setAmount(-10);
     int fanAmount = fan1.getAmount();
