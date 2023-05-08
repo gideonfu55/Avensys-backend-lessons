@@ -2,14 +2,16 @@ package com.java.objects.classes;
 
 public class Student {
 
-  String name;
-  int age;
-  float marks;
+  private String name;
+  private int age;
+  private float marks;
+  private String city;
 
-  public Student(String name, int age, float marks) {
+  public Student(String name, int age, float marks, String city) {
     this.name = name;
     this.age = age;
     this.marks = marks;
+    this.city = city;
   }
 
   public void play() {
@@ -46,6 +48,14 @@ public class Student {
 
   public void setMarks(float marks) {
     this.marks = marks;
+  }
+
+  public String getCity() {
+    return this.city;
+  }
+
+  public void setCity(String city) {
+    this.city = city;
   }
 
   @Override
