@@ -4,28 +4,39 @@ package com.java.objects.testCode;
   
 // }
 
-public class TestingName {
+public class MyThread extends Thread {
 
-  int x;
-  int y;
+  // int x;
+  // int y;
 
-  void add(int a) {
-    x = a + 1;
+  // void add(int a) {
+  //   x = a + 1;
+  // }
+
+  // void add(int a, int b) {
+  //   x = a + 2;
+  // 
+  public static void main(String[] args) {
+    MyThread t = new MyThread();
+    t.start();
+    System.out.print("one. ");
+    t.start();
+    System.out.print("two. ");
   }
 
-  void add(int a, int b) {
-    x = a + 2;
+  public void run() {
+    System.out.print("Thread ");
   }
 }
 
-class TestingName_methods {
-  public static void main(String args[]) {
-    TestingName obj = new TestingName();
-    // int a = 0;
-    obj.add(6);
-    System.out.println(obj.x);
-  }
-}
+// class TestingName_methods {
+//   public static void main(String args[]) {
+//     TestingName obj = new TestingName();
+//     // int a = 0;
+//     obj.add(6);
+//     System.out.println(obj.x);
+//   }
+// }
 
 // public static void main(String[] args) {
 
