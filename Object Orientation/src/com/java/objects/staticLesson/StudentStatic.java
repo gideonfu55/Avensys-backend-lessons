@@ -10,7 +10,7 @@ public class StudentStatic {
     a = 300;
   }
 
-  public static void display() {
+  static void display() {
     System.out.println(a);
     System.out.println(b);
     System.out.println(c);
@@ -27,13 +27,23 @@ public class StudentStatic {
     c = 600;
   }
 
-  public void displayTwo() {
+  void displayTwo() {
     System.out.println(m);
     System.out.println(n);
     System.out.println(o);
     System.out.println(a);
     System.out.println(b);
     System.out.println(c);
+  }
+
+  public class LaunchApp {
+    public static void main(String[] args) {
+
+      StudentStatic.display();
+
+      StudentStatic demo = new StudentStatic();
+      demo.displayTwo();
+    }
   }
 
 }

@@ -1,12 +1,10 @@
-import com.java.objects.staticLesson.StudentStatic;
-
-public class LaunchApp extends Object{
+public class LaunchApp {
   public static void main(String[] args) {
 
-    StudentStatic.display();
+    // StudentStatic.display();
 
-    StudentStatic demo = new StudentStatic();
-    demo.displayTwo();
+    // StudentStatic demo = new StudentStatic();
+    // demo.displayTwo();
 
   }
 }
