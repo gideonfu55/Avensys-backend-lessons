@@ -36,6 +36,7 @@ public class StudentLocalChain {
       return city;
     }
   }
+  
   public void main(String[] args) {
     Student s = new Student("Siddu", 23, "Singapore");
     System.out.println(s.getName());
