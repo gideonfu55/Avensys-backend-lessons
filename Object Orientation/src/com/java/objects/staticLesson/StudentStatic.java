@@ -6,8 +6,8 @@ public class StudentStatic {
 
   static {
     a = 100;
-    a = 200;
-    a = 300;
+    b = 200;
+    c = 300;
   }
 
   static void display() {
