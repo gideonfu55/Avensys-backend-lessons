@@ -7,6 +7,10 @@ public class Student {
   private float marks;
   private String city;
 
+  public Student() {
+    
+  }
+
   public Student(String name, int age, float marks, String city) {
     this.name = name;
     this.age = age;
@@ -14,8 +18,23 @@ public class Student {
     this.city = city;
   }
 
-  public Student() {
-    
+  public Student(String name, float marks) {
+    this.name = name;
+    this.marks = marks;
+  }
+
+  public Student(String name, int age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  public Student(String name, String city) {
+    this.name = name;
+    this.city = city;
+  }
+
+  public Student(String name) {
+    this.name = name;
   }
 
   public void play() {
