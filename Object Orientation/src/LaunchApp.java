@@ -1,12 +1,12 @@
-import com.java.objects.classes.FanOverload;
+import com.java.objects.staticLesson.StudentStatic;
 
 public class LaunchApp extends Object{
   public static void main(String[] args) {
 
-    FanOverload fan = new FanOverload("Xiaomi");
-    System.out.println(fan.getBrand());
-    System.out.println(fan.getNumBlades());
-    System.out.println(fan.getColor());
+    StudentStatic.display();
+
+    StudentStatic demo = new StudentStatic();
+    demo.displayTwo();
 
   }
 }

@@ -1,6 +1,7 @@
 import com.java.objects.classes.Bird;
 import com.java.objects.classes.BookEncapsulated;
 import com.java.objects.classes.Fan;
+import com.java.objects.classes.FanOverload;
 import com.java.objects.classes.Monitor;
 import com.java.objects.classes.Student;
 
@@ -56,10 +57,19 @@ public class App {
         Student student = new Student("Bruce Wayne", 25, 100,
         "Gotham");System.out.println(student);
 
-        Student student2 = new Student();System.out.println(student2);
+        Student student2 = new Student();
+        System.out.println(student2);
 
-        Student student3 = new Student("Tony Stark");System.out.println(student3);
+        Student student3 = new Student("Tony Stark");
+        System.out.println(student3);
 
         Student student4 = new Student("Bruce Banner", 20);
+        System.out.println(student4);
+
+        // For Overload Constructor and Constructor Chaining lesson 
+        FanOverload fan = new FanOverload("Xiaomi");
+        System.out.println(fan.getBrand());
+        System.out.println(fan.getNumBlades());
+        System.out.println(fan.getColor());
     }
 }
