@@ -28,7 +28,6 @@ public class FanOverload extends Object {
     this.brand = brand;
   }
 
-
   public String getBrand() {
     return this.brand;
   }
