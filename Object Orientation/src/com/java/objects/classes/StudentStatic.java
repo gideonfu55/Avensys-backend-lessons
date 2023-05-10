@@ -23,7 +23,7 @@ public class StudentStatic {
   }
 
   public void display() {
-    System.out.println("School: " + school + " Student: " + name + " Score is: " + marks);
+    System.out.println("School: " + school + ", Student: " + name + ", Score is: " + marks);
   }
 
 }
