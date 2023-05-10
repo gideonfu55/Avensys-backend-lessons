@@ -2,7 +2,7 @@ package com.java.objects.classes.inheritance;
 
 public class FanParent {
   
-  private String brand = "Dyson";
+  private String brand;
   private int numBlades;
   private String color;
 

@@ -6,5 +6,4 @@ public class FanChild extends FanParent {
     super(brand, numBlades, color);
   }
 
-
 }

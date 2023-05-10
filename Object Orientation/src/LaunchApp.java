@@ -6,5 +6,7 @@ public class LaunchApp {
     FanChild fan = new FanChild(null, 0, null);
     System.out.println(fan.getBrand());
     
+    fan.blowAir();
+
   }
 }
