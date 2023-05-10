@@ -1,12 +1,7 @@
-import com.java.objects.staticLesson.FanStatic;
-
 public class LaunchApp {
   public static void main(String[] args) {
 
-    FanStatic.displayOne();
-
-    FanStatic demoFan = new FanStatic();
-    demoFan.displayTwo();
+    
 
   }
 }
@@ -15,3 +10,8 @@ public class LaunchApp {
 
 //     StudentStatic demo = new StudentStatic();
 //     demo.displayTwo();
+
+    // FanStatic.displayOne();
+
+    // FanStatic demoFan = new FanStatic();
+    // demoFan.displayTwo();
