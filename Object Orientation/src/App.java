@@ -4,6 +4,10 @@ import com.java.objects.classes.Fan;
 import com.java.objects.classes.FanOverload;
 import com.java.objects.classes.Monitor;
 import com.java.objects.classes.Student;
+import com.java.objects.staticLesson.FanStatic;
+import com.java.objects.staticLesson.Loan;
+import com.java.objects.staticLesson.StudentStatic;
+import com.java.objects.staticLesson.StudentStatic2;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -71,5 +75,46 @@ public class App {
         System.out.println(fan.getBrand());
         System.out.println(fan.getNumBlades());
         System.out.println(fan.getColor());
+
+        // For Static Scope Lesson:
+        StudentStatic.displayOne();
+
+        StudentStatic demo = new StudentStatic();
+        demo.displayTwo();
+
+        FanStatic.displayOne();
+
+        FanStatic demoFan = new FanStatic();
+        demoFan.displayTwo();
+
+        // For Static Variables Lesson:
+        StudentStatic2 student1 = new StudentStatic2();
+        student1.acceptInput();
+        student1.display();
+        System.out.println("****************************");
+        StudentStatic2 student5 = new StudentStatic2();
+        student5.acceptInput();
+        student5.display();
+        System.out.println("****************************");
+        StudentStatic2 student6 = new StudentStatic2();
+        student6.acceptInput();
+        student6.display();
+        System.out.println("****************************");
+
+        Loan loan1 = new Loan();
+        loan1.acceptInput();
+        loan1.findSI();
+        loan1.display();
+        System.out.println("************************");
+        Loan loan2 = new Loan();
+        loan2.acceptInput();
+        loan2.findSI();
+        loan2.display();
+        System.out.println("************************");
+        Loan loan3 = new Loan();
+        loan3.acceptInput();
+        loan3.findSI();
+        loan3.display();
+        System.out.println("************************");
     }
 }

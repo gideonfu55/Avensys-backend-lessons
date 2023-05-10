@@ -1,8 +1,8 @@
-package com.java.objects.classes;
+package com.java.objects.staticLesson;
 
 import java.util.Scanner;
 
-public class StudentStatic {
+public class StudentStatic2 {
   
   String name;
   public static String school = "MIT";
