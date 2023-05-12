@@ -24,11 +24,19 @@ class ChemistryTeacher extends Teacher {
   void teach() {
     System.out.println("Chemistry teacher is teaching chemistry");
   }
+
+  void chemLabExp() {
+    System.out.println("Chemistry teacher is conducting a Chemistry experiment.");
+  }
 }
 
 class BiologyTeacher extends Teacher {
   void teach() {
     System.out.println("Biology teacher is teaching biology.");
+  }
+
+  void bioLabExp() {
+    System.out.println("Biology teacher is conducting a Biology experiment.");
   }
 }
 
@@ -44,6 +52,14 @@ public class Polymorphism {
     ref = pt1;
     ref.teach(); 
     ref.takeAttendance(); // pt is taking 2 forms now: Teacher and PhysicsTeacher
-    // ref.phyLabExp(); // This is not possible, because the parent cannot use the methods of the child.
+    // ref.phyLabExp(); // This give an error because the parent cannot use the methods of the child. We need to downcast in order to use the methods of the child from the parent.
+    ((PhysicsTeacher)ref).phyLabExp();
+
+    ref = ct1;
+    ((ChemistryTeacher)ref).chemLabExp();
+
+    ref = bt1;
+    ((BiologyTeacher)ref).bioLabExp();
+    
   }
 }
