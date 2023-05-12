@@ -1,28 +1,21 @@
 
 class DemoOne extends Object {
-
-  public void greet() {
-    System.out.println("Hello team from DemoOne!");
-  }
-
+  int a = 10;
 }
 
-class DemoTwo extends Object {
-
+class DemoTwo extends DemoOne {
   public void greet() {
     System.out.println("Hello team from DemoTwo!");
   }
-
 }
 
-class DemoThree extends DemoOne {
-  
+class DemoThree extends DemoTwo {
+
 }
 
 public class sketch extends Object {
   public static void main(String[] args) {
     DemoThree d3 = new DemoThree();
-    d3.greet();
-    
+    System.out.println(d3.a);
   }
 }
