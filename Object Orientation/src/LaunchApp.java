@@ -7,6 +7,6 @@ public class LaunchApp {
     System.out.println(fan.getBrand());
     
     fan.blowAir();
-
+    
   }
 }
