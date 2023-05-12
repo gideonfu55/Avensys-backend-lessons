@@ -30,7 +30,7 @@ class BiologyTeacher extends Teacher {
   }
 }
 
-public class overriding extends Object {
+public class Overriding extends Object {
   public static void main(String[] args) {
     PhysicsTeacher pt1 = new PhysicsTeacher();
     pt1.markAttendance();
