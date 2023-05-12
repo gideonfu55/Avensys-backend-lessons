@@ -15,6 +15,14 @@ class DemoTwo extends Object {
 
 }
 
-public class sketch extends Object {
+class DemoThree extends DemoOne {
   
+}
+
+public class sketch extends Object {
+  public static void main(String[] args) {
+    DemoThree d3 = new DemoThree();
+    d3.greet();
+    
+  }
 }
