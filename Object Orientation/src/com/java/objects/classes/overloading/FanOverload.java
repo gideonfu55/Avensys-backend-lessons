@@ -1,4 +1,4 @@
-package com.java.objects.classes;
+package com.java.objects.classes.overloading;
 
 public class FanOverload extends Object {
 

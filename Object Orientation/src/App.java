@@ -1,9 +1,9 @@
 import com.java.objects.classes.Bird;
 import com.java.objects.classes.BookEncapsulated;
 import com.java.objects.classes.Fan;
-import com.java.objects.classes.FanOverload;
 import com.java.objects.classes.Monitor;
 import com.java.objects.classes.Student;
+import com.java.objects.classes.overloading.FanOverload;
 import com.java.objects.staticLesson.FanStatic;
 import com.java.objects.staticLesson.Loan;
 import com.java.objects.staticLesson.StudentStatic;
