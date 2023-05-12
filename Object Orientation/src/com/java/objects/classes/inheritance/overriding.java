@@ -20,12 +20,25 @@ class PhysicsTeacher extends Teacher {
   }
 }
 
+class BiologyTeacher extends Teacher {
+  void teach() {
+    System.out.println("Biology teacher is teaching biology.");
+  }
+
+  void labExpBio() {
+    System.out.println("Biology teacher is doing a human experiment.");
+  }
+}
+
 public class overriding extends Object {
   public static void main(String[] args) {
     PhysicsTeacher pt1 = new PhysicsTeacher();
     pt1.markAttendance();
     pt1.teach();
     pt1.labExpPhy();
+
+    BiologyTeacher bt1 = new BiologyTeacher();
+    bt1.teach();
+    bt1.labExpBio();
   }
-  
 }
