@@ -10,12 +10,9 @@ class DemoTwo extends DemoOne {
   }
 }
 
-// class DemoThree extends DemoTwo {
-
-// }
-
 public class sketch extends Object {
   public static void main(String[] args) {
     DemoTwo d2 = new DemoTwo();
+    
   }
 }
