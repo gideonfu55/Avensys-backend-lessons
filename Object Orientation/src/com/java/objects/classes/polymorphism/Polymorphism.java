@@ -25,7 +25,12 @@ class BiologyTeacher extends Teacher {
 }
 
 public class Polymorphism {
-  PhysicsTeacher pt1 = new PhysicsTeacher();
-  ChemistryTeacher ct1 = new ChemistryTeacher();
-  BiologyTeacher bt1 = new BiologyTeacher();
+  public static void main(String[] args) {
+    PhysicsTeacher pt1 = new PhysicsTeacher();
+    ChemistryTeacher ct1 = new ChemistryTeacher();
+    BiologyTeacher bt1 = new BiologyTeacher();
+    pt1.teach(); // 1:1
+    ct1.teach(); // 1:1
+    bt1.teach(); // 1:1
+  }
 }
