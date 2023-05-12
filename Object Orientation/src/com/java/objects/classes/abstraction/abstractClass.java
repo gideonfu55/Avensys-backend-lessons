@@ -26,7 +26,6 @@ class GoldenEagle extends Eagle {
   public void eat() {
     System.out.println("Golden eagle hunts and eats fishes.");
   }
-
 }
 
 class SerpentEagle extends Eagle {
