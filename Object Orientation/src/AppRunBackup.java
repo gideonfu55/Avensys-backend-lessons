@@ -1,15 +1,15 @@
+import com.java.objects.accessmodifier.staticLesson.FanStatic;
+import com.java.objects.accessmodifier.staticLesson.Loan;
+import com.java.objects.accessmodifier.staticLesson.StudentStatic;
+import com.java.objects.accessmodifier.staticLesson.StudentStatic2;
 import com.java.objects.classes.encapsulation.BookEncapsulated;
 import com.java.objects.classes.overloading.FanOverload;
 import com.java.objects.classes.starters.Bird;
 import com.java.objects.classes.starters.Fan;
 import com.java.objects.classes.starters.Monitor;
 import com.java.objects.classes.starters.Student;
-import com.java.objects.staticLesson.FanStatic;
-import com.java.objects.staticLesson.Loan;
-import com.java.objects.staticLesson.StudentStatic;
-import com.java.objects.staticLesson.StudentStatic2;
 
-public class App {
+public class AppRunBackup {
     public static void main(String[] args) throws Exception {
         System.out.println("Hello, World!");
 

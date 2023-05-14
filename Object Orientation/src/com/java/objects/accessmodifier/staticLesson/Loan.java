@@ -1,4 +1,4 @@
-package com.java.objects.staticLesson;
+package com.java.objects.accessmodifier.staticLesson;
 
 import java.util.Scanner;
 

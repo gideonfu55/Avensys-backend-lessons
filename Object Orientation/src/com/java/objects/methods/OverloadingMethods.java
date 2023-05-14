@@ -1,6 +1,6 @@
 package com.java.objects.methods;
 
-public class methodOverloading {
+public class OverloadingMethods {
 
   public static void main(String[] args) {
 

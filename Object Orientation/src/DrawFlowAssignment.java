@@ -26,7 +26,7 @@ class Demo2 extends Demo1 {
   }
 }
 
-public class sketchDraw extends Object {
+public class DrawFlowAssignment extends Object {
   public static void main(String[] args) {
     Demo2 d2 = new Demo2(1000, 2000);
     System.out.println(d2.a);

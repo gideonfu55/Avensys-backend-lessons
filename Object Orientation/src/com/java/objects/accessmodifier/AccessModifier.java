@@ -1,4 +1,4 @@
-package com.java.objects.classes.inheritance;
+package com.java.objects.accessmodifier;
 
 class Parent {
   public void greet() {
@@ -15,5 +15,6 @@ class Child extends Parent {
 }
 
 public class AccessModifier {
-  
+  // Access modifiers order of visibility:
+  // public > default > protected > private
 }
