@@ -1,4 +1,4 @@
-package com.java.objects.classes;
+package com.java.objects.classes.starters;
 
 public class Student {
 
