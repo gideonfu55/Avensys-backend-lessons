@@ -1,3 +1,4 @@
+package com.java.objects.classes.abstraction;
 
 abstract class AnimalTwo {
   abstract public void eat();
@@ -47,7 +48,7 @@ class Outdoors {
   }
 }
 
-public class sketch3 {
+public class AnimalAbstract {
   public static void main(String[] args) {
     NorthernLion n1 = new NorthernLion();
     SouthernLion s1 = new SouthernLion();

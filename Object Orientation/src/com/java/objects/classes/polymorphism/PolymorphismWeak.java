@@ -40,7 +40,7 @@ class BiologyTeacherB extends TeacherB {
   }
 }
 
-public class PolymorphismB {
+public class PolymorphismWeak {
   public static void main(String[] args) {
     PhysicsTeacherB pt1 = new PhysicsTeacherB(); // this is known as tight coupling
     ChemistryTeacherB ct1 = new ChemistryTeacherB();

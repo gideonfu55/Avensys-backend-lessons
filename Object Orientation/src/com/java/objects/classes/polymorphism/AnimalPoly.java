@@ -1,3 +1,4 @@
+package com.java.objects.classes.polymorphism;
 class Animal {
   public void eat() {
     System.out.println("Animal is eating.");
@@ -45,8 +46,7 @@ class Forest {
   }
 }
 
-public class sketch2 {
-
+public class AnimalPoly {
   public static void main(String[] args) {
     Tiger tiger1 = new Tiger();
     Lion lion1 = new Lion();
