@@ -13,7 +13,7 @@ class businessMan1 implements CalculateInterest {
   int simpleInterest = 0;
 
   public void acceptInput() {
-    System.out.println("This is a fixed loan");
+    System.out.println("This is a fixed loan.");
   }
 
   public void findSimpleInterest() {
@@ -22,7 +22,7 @@ class businessMan1 implements CalculateInterest {
   }
 
   public void display() {
-    System.out.println("The simple interest for the loan per annum is: " + simpleInterest);
+    System.out.println("The simple interest for the loan per annum is: $" + simpleInterest);
   }
 
 }
@@ -35,8 +35,9 @@ class businessMan2 implements CalculateInterest {
 
   public void acceptInput() {
     Scanner scan = new Scanner(System.in);
+    System.out.println("\nPlease provide your required loan amount:");
     loanAmount = scan.nextInt();
-    System.out.println("Your loan amount is: " + loanAmount);
+    System.out.println("Your loan amount is: $" + loanAmount);
   }
 
   public void findSimpleInterest() {
@@ -45,7 +46,7 @@ class businessMan2 implements CalculateInterest {
   }
 
   public void display() {
-    System.out.println("The simple interest for the loan per annum is: " + simpleInterest);
+    System.out.println("The simple interest for the loan per annum is: $" + simpleInterest);
   }
 
 }
@@ -57,13 +58,14 @@ class businessMan3 implements CalculateInterest {
 
   public void acceptInput() {
     Scanner scan = new Scanner(System.in);
+    System.out.println("\nPlease provide your required loan amount:");
     loanAmount = scan.nextInt();
 
     if (loanAmount <= 0) {
       System.out.println("Please enter a valid loan amount.");
       loanAmount = 0;
     } else {
-      System.out.println("Your loan amount is: " + loanAmount);
+      System.out.println("Your loan amount is: $" + loanAmount);
     }
   }
 
@@ -73,7 +75,7 @@ class businessMan3 implements CalculateInterest {
   }
 
   public void display() {
-    System.out.println("The simple interest for the loan per annum is: " + simpleInterest);
+    System.out.println("The simple interest for the loan per annum is: $" + simpleInterest);
   }
 
 }
@@ -93,8 +95,13 @@ public class sketch {
     businessMan3 b3 = new businessMan3();
 
     BankTwo bankNew = new BankTwo();
+    System.out.println("Business Man 1: ");
     bankNew.acceptCalculateInterest(b1);
+
+    System.out.println("\nBusiness Man 2: ");
     bankNew.acceptCalculateInterest(b2);
+
+    System.out.println("\nBusiness Man 3: ");
     bankNew.acceptCalculateInterest(b3);
   }
 }
