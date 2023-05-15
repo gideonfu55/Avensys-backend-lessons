@@ -23,5 +23,9 @@ public class tryCatchTestExtends {
     // catch(Derived d) {
     //   System.out.println("Caught derived class exception");
     // }
+
+    // catch (Derived d) {
+    //   System.out.println("Caught derived class exception.");
+    // }
   }
 }
