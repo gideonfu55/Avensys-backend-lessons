@@ -1,3 +1,4 @@
+package com.java.objects.classes.constructorchain;
 class Demo1 extends Object {
   int a;
   int b;

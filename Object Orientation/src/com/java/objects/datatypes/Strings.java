@@ -1,4 +1,4 @@
-package com.java.objects.datatype;
+package com.java.objects.datatypes;
 
 public class Strings {
   public static void main(String[] args) {
