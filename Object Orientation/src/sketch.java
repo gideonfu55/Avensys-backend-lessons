@@ -41,7 +41,7 @@ class businessMan2 implements CalculateInterest {
     loanAmount = scan.nextInt();
     System.out.println("Please provide the intended payment period:");
     paymentPeriod = scan.nextInt();
-    System.out.println("Your loan amount is: $" + loanAmount + "over " + paymentPeriod + " years.");
+    System.out.println("Your loan amount is: $" + loanAmount + " over " + paymentPeriod + " year(s).");
   }
 
   public void findSimpleInterest() {
@@ -73,13 +73,17 @@ class businessMan3 implements CalculateInterest {
       loanAmount = 0;
       paymentPeriod = 0;
     } else {
-      System.out.println("Your loan amount is: $" + loanAmount + "over " + paymentPeriod + " years.");
+      System.out.println("Your loan amount is: $" + loanAmount + " over " + paymentPeriod + " year(s).");
     }
   }
 
   public void findSimpleInterest() {
-    simpleInterest = loanAmount * interestRate / 100 / paymentPeriod;
-    System.out.println(simpleInterest);
+    if (loanAmount == 0 || paymentPeriod == 0) {
+      System.out.println("There is no valid loan amount and/or payment period.");
+    } else {
+      simpleInterest = loanAmount * interestRate / 100 / paymentPeriod;
+      System.out.println(simpleInterest);
+    }
   }
 
   public void display() {
