@@ -92,7 +92,5 @@ public class InterfaceLesson extends Object {
     mathOp1.acceptCalculator(mc1);
     mathOp1.acceptCalculator(mc2);
     mathOp1.acceptCalculator(mc3);
-
   }
-
 }
