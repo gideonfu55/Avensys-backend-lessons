@@ -1,3 +1,4 @@
+package com.java.objects.classes.interfaces;
 import java.util.Scanner;
 
 interface CalculateInterest {
@@ -100,7 +101,7 @@ class BankTwo {
   }
 }
 
-public class sketch {
+public class SimpleInterestInterface {
   public static void main(String[] args) {
     businessMan1 b1 = new businessMan1();
     businessMan2 b2 = new businessMan2();
