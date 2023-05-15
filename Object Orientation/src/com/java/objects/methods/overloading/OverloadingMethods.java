@@ -1,4 +1,4 @@
-package com.java.objects.methods;
+package com.java.objects.methods.overloading;
 
 public class OverloadingMethods {
 

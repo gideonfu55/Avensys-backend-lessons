@@ -1,4 +1,4 @@
-package com.java.objects.methods;
+package com.java.objects.methods.overloading;
 
 public class Calculator {
   // Type  1: no input and no output - add() method
