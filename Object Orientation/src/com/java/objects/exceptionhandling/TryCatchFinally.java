@@ -2,7 +2,7 @@ package com.java.objects.exceptionhandling;
 
 import java.util.Scanner;
 
-public class TryCatchBlock {
+public class TryCatchFinally {
   public static void main(String[] args) {
 
     Scanner scan = new Scanner(System.in);
