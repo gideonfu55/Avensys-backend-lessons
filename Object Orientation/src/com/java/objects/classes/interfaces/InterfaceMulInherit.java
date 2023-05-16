@@ -1,17 +1,17 @@
 package com.java.objects.classes.interfaces;
 
 //7. Multiple inheritance is possible using interface in java
-interface Calculator1 {
+interface CalculatorBest {
   public void mul();
   public void div();
 }
 
-interface Calculator2 {
+interface CalculatorBest2 {
   public void add();
   public void sub();
 }
 
-class MyCalc1 implements Calculator1, Calculator2 {
+class MyCalc1 implements CalculatorBest, CalculatorBest2 {
   public void mul() {
     int a = 10;
     int b = 20;
