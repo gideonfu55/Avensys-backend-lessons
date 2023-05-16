@@ -44,7 +44,7 @@ public class MultipleTryCatch {
     }
 
     catch (InputMismatchException ie) {
-      System.out.println("Hi user, please pass a valid input.");
+      System.out.println("Hi user, please pass a valid input type.");
     }
 
     catch (ArrayIndexOutOfBoundsException aie) {
