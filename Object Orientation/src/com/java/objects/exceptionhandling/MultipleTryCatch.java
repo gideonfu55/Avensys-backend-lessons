@@ -33,7 +33,6 @@ public class MultipleTryCatch {
       arr[position] = element;
 
       System.out.println("The element " + element + " is present in " + position + " position of array.");
-    
     } 
 
     catch (ArithmeticException ae) {
