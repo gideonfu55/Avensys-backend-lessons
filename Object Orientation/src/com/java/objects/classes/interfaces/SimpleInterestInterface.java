@@ -9,64 +9,64 @@ interface CalculateInterest {
 
 class businessMan1 implements CalculateInterest {
 
-  int loanAmount = 1000;
-  int interestRate = 2;
+  double loanAmount = 1000;
+  double interestRate = 0.02;
   int paymentPeriod = 2;
-  int simpleInterest = 0;
+  double simpleInterest = 0;
 
   public void acceptInput() {
     System.out.println("This is a fixed loan.");
   }
 
   public void findSimpleInterest() {
-    simpleInterest = loanAmount * interestRate / 100 / paymentPeriod;
+    simpleInterest = loanAmount * interestRate * paymentPeriod;
     System.out.println(simpleInterest);
   }
 
   public void display() {
-    System.out.println("The simple interest for the loan per annum is: $" + simpleInterest);
+    System.out.println("The simple interest for the loan is: $" + simpleInterest);
   }
 
 }
 
 class businessMan2 implements CalculateInterest {
 
-  int loanAmount = 0;
-  int interestRate = 3;
-  int paymentPeriod = 0;
-  int simpleInterest = 0;
+  double loanAmount;
+  double interestRate = 0.03;
+  int paymentPeriod;
+  double simpleInterest;
 
   public void acceptInput() {
     Scanner scan = new Scanner(System.in);
     System.out.println("Please provide your required loan amount:");
     loanAmount = scan.nextInt();
-    System.out.println("Please provide the intended payment period:");
+    System.out.println("Please provide the intended payment period in years:");
     paymentPeriod = scan.nextInt();
     System.out.println("Your loan amount is: $" + loanAmount + " over " + paymentPeriod + " year(s).");
   }
 
   public void findSimpleInterest() {
-    simpleInterest = loanAmount * interestRate / 100 / paymentPeriod;
+    simpleInterest = loanAmount * interestRate * paymentPeriod;
     System.out.println(simpleInterest);
   }
 
   public void display() {
-    System.out.println("The simple interest for the loan per annum is: $" + simpleInterest);
+    System.out.println("The simple interest for the loan is: $" + simpleInterest);
   }
 
 }
 
 class businessMan3 implements CalculateInterest {
-  int loanAmount = 0;
-  int interestRate = 4;
-  int paymentPeriod = 0;
-  int simpleInterest = 0;
+  double loanAmount;
+  double interestRate = 0.04;
+  int paymentPeriod;
+  double simpleInterest;
 
   public void acceptInput() {
     Scanner scan = new Scanner(System.in);
     System.out.println("Please provide your required loan amount:");
     loanAmount = scan.nextInt();
-    System.out.println("Please provide the intended payment period:");
+    System.out.println("Please provide the intended payment period in years:");
     paymentPeriod = scan.nextInt();
 
     if (loanAmount <= 0 || paymentPeriod <= 0) {
@@ -82,13 +82,13 @@ class businessMan3 implements CalculateInterest {
     if (loanAmount == 0 || paymentPeriod == 0) {
       System.out.println("There is no valid loan amount and/or payment period.");
     } else {
-      simpleInterest = loanAmount * interestRate / 100 / paymentPeriod;
+      simpleInterest = loanAmount * interestRate * paymentPeriod;
       System.out.println(simpleInterest);
     }
   }
 
   public void display() {
-    System.out.println("The simple interest for the loan per annum is: $" + simpleInterest);
+    System.out.println("The simple interest for the loan is: $" + simpleInterest);
   }
 
 }
