@@ -10,6 +10,8 @@ public class ExceptionHandlingLesson {
     System.out.println("Enter the numerator:");
     int a = scan.nextInt();
     
+    // Arithmetic Exception occurs if zero is placed:
+    // - Problem: it leads to a application crash that's abrupt and uncontrolled.
     System.out.println("Enter the denominator:");
     int b = scan.nextInt();
 
