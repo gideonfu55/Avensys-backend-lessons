@@ -3,7 +3,7 @@ import java.util.Scanner;
 class DemoOne {
 
   public void alpha() {
-    System.out.println("Connection 1 is established");
+    System.out.println("Connection 3 is established");
 
     Scanner scan = new Scanner(System.in);
 
@@ -18,6 +18,7 @@ class DemoOne {
 
     int c = a / b;
     System.out.println("Result of the operation: " + c);
+    System.out.println("Connection 3 is closed.");
   }
 }
 
@@ -33,10 +34,10 @@ class DemoTwo {
 
 class DemoThree {
   public void gamma() {
-    System.out.println("Connection 3 is established");
+    System.out.println("Connection 1 is established");
     DemoTwo d2 = new DemoTwo();
     d2.beta();
-    System.out.println("Connection 3 is closed.");
+    System.out.println("Connection 1 is closed.");
   }
 }
 
