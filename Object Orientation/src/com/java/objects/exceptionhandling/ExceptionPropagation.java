@@ -1,3 +1,4 @@
+package com.java.objects.exceptionhandling;
 import java.util.Scanner;
 
 class DemoOne {
@@ -41,7 +42,7 @@ class DemoThree {
   }
 }
 
-public class sketch {
+public class ExceptionPropagation {
   public static void main(String[] args) {
     System.out.println("Main connection is established");
     DemoThree d3 = new DemoThree();
