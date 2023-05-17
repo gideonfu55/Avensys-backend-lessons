@@ -31,11 +31,16 @@ class SketchPad {
   public static void main(String[] args) {
     System.out.println("Main connection is established.");
     ATM atm1 = new ATM();
-    try {
-      atm1.alpha();
-    } catch (Exception e) {
-      System.out.println("Exception is handled in main method now.");
-      atm1.transaction();
+    boolean repeatTransaction = true;
+    while (repeatTransaction) {
+      try {
+        atm1.alpha();
+        repeatTransaction = false;
+      } catch (Exception e) {
+        System.out.println("There is an error: " + e.getMessage());
+        System.out.println("Exception is handled in main method now.");
+        repeatTransaction = true;
+      }
     }
 
     System.out.println("Main connection is closed.");
