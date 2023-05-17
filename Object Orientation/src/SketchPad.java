@@ -24,7 +24,7 @@ class ATMTwo {
 
   public void verify() throws InvalidInputException {
     if (userAccNum == accInput && userPassword.equals(pwInput)) {
-      System.out.println("Account holder verified. Please retrieve your money.");
+      System.out.println("Account holder verified. Please select your banking service options.");
     } else {
       InvalidInputException ie = new InvalidInputException();
       throw ie;
@@ -35,22 +35,21 @@ class ATMTwo {
 class Bank {
   public void initiate() {
     ATMTwo atm = new ATMTwo();
-    try {
-      atm.acceptInput();
-      atm.verify();
-    } catch (InvalidInputException e1) {
-      System.out.println("Invalid input. You have 2 more chances to enter correct details.");
+    boolean repeatTransaction = true;
+    int tryCounts = 3;
+    while (repeatTransaction) {
       try {
         atm.acceptInput();
         atm.verify();
-      } catch (InvalidInputException e2) {
-        System.out.println("Invalid input. You have 1 more chances to enter correct details.");
-        try {
-          atm.acceptInput();
-          atm.verify(); 
-        } catch (InvalidInputException e3) {
-          System.out.println("Invalid input. You have maxed out your number of tries. You card is blocked. Please contact your bank.");
+        repeatTransaction = false;
+      } catch (Exception e) {
+        System.out.println("Invalid input. You have " + (tryCounts - 1) + " more chance(s) to enter correct details.");
+        tryCounts--;
+        if (tryCounts == 0) {
+          System.out.println("\nYou have maxed out your number of tries. You card has been blocked. Please contact your bank.");
+          break;
         }
+        repeatTransaction = true;
       }
     }
   }
