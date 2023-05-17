@@ -1,3 +1,4 @@
+package com.java.objects.exceptionhandling.assignment;
 import java.util.Scanner;
 
 // Custom exception:
@@ -52,7 +53,7 @@ class SocialSpace {
   }
 }
 
-public class AssignmentPad {
+public class MatchFindingApp {
   public static void main(String[] args) {
     SocialSpace newSS = new SocialSpace();
     newSS.join();

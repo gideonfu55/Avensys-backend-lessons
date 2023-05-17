@@ -1,3 +1,4 @@
+package com.java.objects.exceptionhandling;
 import java.util.Scanner;
 
 // Custom Exception Handling:
@@ -55,7 +56,7 @@ class Bank {
   }
 }
 
-public class SketchPad {
+public class BankExceptionHandling {
   public static void main(String[] args) {
     Bank bank1 = new Bank();
     bank1.initiate();
