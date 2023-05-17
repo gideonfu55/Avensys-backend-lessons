@@ -1,3 +1,4 @@
+package com.java.objects.exceptionhandling;
 import java.util.Scanner;
 
 class DemoTwo {
@@ -20,7 +21,7 @@ class DemoTwo {
   }
 }
 
-public class SketchPad2 {
+public class StackTraceExp {
   public static void main(String[] args) {
     System.out.println("Main Connection is established");
     DemoTwo d1 = new DemoTwo();
