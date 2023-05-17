@@ -1,4 +1,5 @@
-class Bank {
+package com.java.objects.exceptionhandling;
+class DemoOne {
   public void alpha() {
     try {
       System.out.println("Connection 3 established.");
@@ -10,8 +11,11 @@ class Bank {
   }
 }
 
-class SketchPad {
+public class ExceptionLoop {
   public static void main(String[] args) {
-    
+    System.out.println("Main Connection is established");
+    DemoOne d1 = new DemoOne();
+    d1.alpha();
+    System.out.println("Main Connection is closed.");
   }
 }
