@@ -14,7 +14,8 @@ class DemoTwo {
       System.out.println("Connection 1 is closed.");
     }
     catch (Exception e) {
-      System.out.println(e.getMessage());
+      // System.out.println(e.getMessage());
+      e.printStackTrace();
     }
   }
 }
