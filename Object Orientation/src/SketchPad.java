@@ -2,7 +2,9 @@ import java.util.Scanner;
 
 // Custom Exception Handling:
 class InvalidInputException extends Exception {
-  
+  public String getMessage() {
+    return "Invalid entry.";
+  }
 }
 
 class ATMTwo {
@@ -20,11 +22,12 @@ class ATMTwo {
     pwInput = scan.nextLine();
   }
 
-  public void verify() {
+  public void verify() throws InvalidInputException {
     if (userAccNum == accInput && userPassword.equals(pwInput)) {
       System.out.println("Account holder verified. Please retrieve your money.");
     } else {
-      System.out.println("Verification error. Please contact the Bank HQ.");
+      InvalidInputException ie = new InvalidInputException();
+      throw ie;
     }
   }
 }
@@ -32,8 +35,24 @@ class ATMTwo {
 class Bank {
   public void initiate() {
     ATMTwo atm = new ATMTwo();
-    atm.acceptInput();
-    atm.verify();
+    try {
+      atm.acceptInput();
+      atm.verify();
+    } catch (InvalidInputException e1) {
+      System.out.println("Invalid input. You have 2 more chances to enter correct details.");
+      try {
+        atm.acceptInput();
+        atm.verify();
+      } catch (InvalidInputException e2) {
+        System.out.println("Invalid input. You have 1 more chances to enter correct details.");
+        try {
+          atm.acceptInput();
+          atm.verify(); 
+        } catch (InvalidInputException e3) {
+          System.out.println("Invalid input. You have maxed out your number of tries. You card is blocked. Please contact your bank.");
+        }
+      }
+    }
   }
 }
 
