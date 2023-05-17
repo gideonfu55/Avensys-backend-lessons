@@ -1,3 +1,4 @@
+package com.java.objects.exceptionhandling;
 import java.util.Scanner;
 
 class ATM {
@@ -27,7 +28,7 @@ class ATM {
   }
 }
 
-class SketchPad {
+class ExceptionRethrow {
   public static void main(String[] args) {
     System.out.println("Main connection is established.");
     ATM atm1 = new ATM();
