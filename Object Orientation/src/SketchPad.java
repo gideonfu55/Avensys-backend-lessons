@@ -36,12 +36,8 @@ class SketchPad {
     } catch (Exception e) {
       System.out.println("Exception is handled in main method now.");
       atm1.transaction();
-      while (e.getMessage().equals("/ by zero")) {
-        atm1.transaction();
-      }
     }
 
     System.out.println("Main connection is closed.");
-
   }
 }
