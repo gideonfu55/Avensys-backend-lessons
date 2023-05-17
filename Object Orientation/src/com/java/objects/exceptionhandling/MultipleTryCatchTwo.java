@@ -1,3 +1,4 @@
+package com.java.objects.exceptionhandling;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
