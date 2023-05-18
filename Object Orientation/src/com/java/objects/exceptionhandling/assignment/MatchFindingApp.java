@@ -4,13 +4,13 @@ import java.util.Scanner;
 // Custom exception:
 class OverAgeException extends Exception {
   public String getMessage() {
-    return "Your age is above 45 and beyond the age limit.";
+    return "Your age is above 45 and beyond the age limit for this app.";
   }
 }
 
 class UnderAgeException extends Exception {
   public String getMessage() {
-    return "Your age is under 18 and below the age limit.";
+    return "Your age is under 18 and below the age limit for this app.";
   }
 }
 
@@ -30,11 +30,11 @@ class MatchFinderApp {
 
   public void verify() throws OverAgeException, UnderAgeException{
     if (ageInput >= underageLimit && ageInput <= overageLimit) {
-      System.out.println("Thank you. Please proceed with our match finder services.");
+      System.out.println("Thank you. Please proceed with our match finder services!");
     } else if (ageInput < underageLimit) {
       UnderAgeException uae = new UnderAgeException();
       throw uae;
-    } else if (ageInput > overageLimit) {
+    } else {
       OverAgeException oae = new OverAgeException();
       throw oae;
     }
@@ -48,7 +48,7 @@ class SocialSpace {
       newApp1.acceptInput();
       newApp1.verify();
     } catch (Exception e) {
-      System.out.println(e);
+      System.out.println(e.getMessage());
     }
   }
 }
