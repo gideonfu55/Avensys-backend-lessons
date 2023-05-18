@@ -50,7 +50,7 @@ class Bank {
           System.out.println("\nYou have maxed out your number of tries. You card has been blocked. Please contact your bank.");
           break;
         }
-        repeatTransaction = true;
+        // repeatTransaction = true;
       }
     }
   }
