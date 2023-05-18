@@ -1,3 +1,4 @@
+package com.java.objects.collections;
 import java.util.LinkedList;
 
 public class LinkedLists {

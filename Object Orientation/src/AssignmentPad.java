@@ -36,6 +36,9 @@ public class AssignmentPad {
       System.out.println(item);
     });
 
+    System.out.println("\n=== Set/Update ===");
+    ll1.set(4, "?");
+    System.out.println(ll1);
     System.out.println("\n=== Offer First ===");
     ll1.offerFirst("Yes");
     System.out.println(ll1);
