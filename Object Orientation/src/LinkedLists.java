@@ -13,7 +13,7 @@ public class LinkedLists {
     // It maintains the insertion order just like ArrayLists.
     System.out.println(ll);
 
-    ll.add(0, "Selina Kyle loves.");
+    ll.add(0, "Selina Kyle loves Batman.");
     System.out.println(ll);
 
     LinkedList<String> ll2 = new LinkedList<>();
@@ -25,6 +25,9 @@ public class LinkedLists {
 
     ll.addFirst("Haha");
     ll.addLast("Excuse.");
+    System.out.println(ll);
+
+    ll.removeAll(ll2);
     System.out.println(ll);
   }
 }
