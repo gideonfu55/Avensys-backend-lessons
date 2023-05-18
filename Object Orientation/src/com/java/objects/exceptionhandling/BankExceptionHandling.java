@@ -47,10 +47,9 @@ class Bank {
         System.out.println("Invalid input. You have " + (tryCounts - 1) + " more chance(s) to enter correct details.");
         tryCounts--;
         if (tryCounts == 0) {
-          System.out.println("\nYou have maxed out your number of tries. You card has been blocked. Please contact your bank.");
+          System.out.println("\nYou have maxed out your number of tries. You account has been locked. Please contact your bank.");
           break;
         }
-        // repeatTransaction = true;
       }
     }
   }
