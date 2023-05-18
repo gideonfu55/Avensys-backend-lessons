@@ -1,3 +1,4 @@
+package com.java.objects.exceptionhandling;
 class DemoThree {
   // Liskov's Substitution Principle 1:
   // If Exception is thrown in parent class, it is not necessary to throw it in the child class.
@@ -14,7 +15,7 @@ class DemoFour extends DemoThree {
   }
 }
 
-public class SketchPad2 {
+public class LiskovPrinciple {
   public static void main(String[] args) {
     System.out.println("Main connection is established.");
     System.out.println("Main connection is closed.");
