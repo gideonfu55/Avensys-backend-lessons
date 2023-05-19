@@ -1,5 +1,5 @@
 package com.java.objects.exceptionhandling;
-class DemoThree {
+class DemoThreeNew {
   // Liskov's Substitution Principle 1:
   // If Exception is thrown in parent class, it is not necessary to throw it in the child class.
   // If an exception is thrown in the child class, this exception itself should have a is-a relationship with the one that's thrown in the parent.
@@ -9,7 +9,7 @@ class DemoThree {
   }
 }
 
-class DemoFour extends DemoThree {
+class DemoFour extends DemoThreeNew {
   public void greet() {
     System.out.println("Hello Team from Mario!");
   }

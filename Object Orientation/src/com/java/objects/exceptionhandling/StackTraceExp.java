@@ -1,7 +1,7 @@
 package com.java.objects.exceptionhandling;
 import java.util.Scanner;
 
-class DemoTwo {
+class DemoTwoNew {
   public void alpha() {
     try {   
       System.out.println("Connection 1 is established.");
@@ -26,7 +26,7 @@ class DemoTwo {
 public class StackTraceExp {
   public static void main(String[] args) {
     System.out.println("Main Connection is established");
-    DemoTwo d1 = new DemoTwo();
+    DemoTwoNew d1 = new DemoTwoNew();
     d1.alpha();
     System.out.println("Main Connection is closed.");
   }
