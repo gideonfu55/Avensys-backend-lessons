@@ -1,3 +1,4 @@
+package com.java.objects.collections.queues;
 import java.util.ArrayDeque;
 
 public class ArrayDeques {

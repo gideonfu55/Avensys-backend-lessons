@@ -1,3 +1,4 @@
+package com.java.objects.collections.queues;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
@@ -20,6 +21,16 @@ public class PriorityQueueCustom {
     while (!priorityQueue.isEmpty()) {
       System.out.println(priorityQueue.poll());
     }
+
+    System.out.println(priorityQueue);
+
+    // Print the elements in order from the PriorityQueue
+    // System.out.println(priorityQueue.poll());
+    // System.out.println(priorityQueue.poll());
+    // System.out.println(priorityQueue.poll());
+    // System.out.println(priorityQueue.poll());
+    // System.out.println(priorityQueue.poll());
+    // System.out.println(priorityQueue.poll());
   }
 
   // Custom comparator implementation
@@ -30,7 +41,7 @@ public class PriorityQueueCustom {
       // Return a negative value if o1 should be placed before o2,
       // Return a positive value if o1 should be placed after o2,
       // Return 0 if o1 and o2 are considered equal in terms of priority
-      return o1 - o2;
+      return o2 - o1;
     }
   }
 }
