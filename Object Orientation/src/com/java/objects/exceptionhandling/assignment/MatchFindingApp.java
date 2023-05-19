@@ -26,6 +26,8 @@ class MatchFinderApp {
     username = scan.nextLine();
     System.out.println("Please enter your age: ");
     ageInput = scan.nextInt();
+
+    scan.close(); // need to open when running in main again
   }
 
   public void verify() throws OverAgeException, UnderAgeException{

@@ -1,5 +1,5 @@
 package com.java.objects.exceptionhandling;
-class DemoOne {
+class DemoOneNew {
   public void alpha() {
     try {
       System.out.println("Connection 3 established.");

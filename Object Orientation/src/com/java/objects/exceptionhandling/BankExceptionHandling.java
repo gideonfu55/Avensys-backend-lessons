@@ -21,6 +21,8 @@ class ATMTwo {
     scan.nextLine();
     System.out.println("Enter the password");
     pwInput = scan.nextLine();
+
+    scan.close(); // need to open when running in main again
   }
 
   public void verify() throws InvalidInputException {

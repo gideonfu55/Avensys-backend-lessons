@@ -19,7 +19,7 @@ public class StudentStatic2 {
     System.out.println("Enter the score:");
     marks = scan.nextInt();
 
-    // scan.close();
+    scan.close(); // need to open when running in main again
   }
 
   public void display() {

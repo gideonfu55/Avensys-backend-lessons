@@ -43,6 +43,8 @@ class businessMan2 implements CalculateInterest {
     System.out.println("Please provide the intended payment period in years:");
     paymentPeriod = scan.nextInt();
     System.out.println("Your loan amount is: $" + loanAmount + " over " + paymentPeriod + " year(s).");
+
+    scan.close(); // need to open when running in main again
   }
 
   public void findSimpleInterest() {
@@ -76,6 +78,8 @@ class businessMan3 implements CalculateInterest {
     } else {
       System.out.println("Your loan amount is: $" + loanAmount + " over " + paymentPeriod + " year(s).");
     }
+
+    scan.close(); // need to open when running in main again
   }
 
   public void findSimpleInterest() {

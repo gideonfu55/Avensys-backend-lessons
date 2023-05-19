@@ -13,6 +13,8 @@ class DemoTwo {
       int c = a / b;
       System.out.println("Result is: " + c);
       System.out.println("Connection 1 is closed.");
+
+      scan.close(); // need to open when running in main again
     }
     catch (Exception e) {
       // System.out.println(e.getMessage());

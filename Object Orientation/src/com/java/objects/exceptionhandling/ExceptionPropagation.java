@@ -20,6 +20,8 @@ class DemoOne {
     int c = a / b;
     System.out.println("Result of the operation: " + c);
     System.out.println("Connection 3 is closed.");
+
+    scan.close(); // need to open when running in main again
   }
 }
 

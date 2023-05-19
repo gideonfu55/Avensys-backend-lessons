@@ -16,7 +16,7 @@ public class Loan {
     System.out.println("Enter the time:");
     time = scan.nextInt();
 
-    // scan.close();
+    scan.close(); // need to open when running in main again
   }
 
   public void findSI() {

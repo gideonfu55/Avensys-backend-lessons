@@ -32,6 +32,8 @@ class MyCal2 implements Calculator {
     int b = scan.nextInt();
     int c = a * b;
     System.out.println(c);
+
+    scan.close(); // need to open when running in main again
   }
 
   public void divide() {
@@ -40,6 +42,8 @@ class MyCal2 implements Calculator {
     int b = scan.nextInt();
     int c = a / b;
     System.out.println(c);
+
+    scan.close(); // need to open when running in main again
   }
 }
 
@@ -57,6 +61,8 @@ class MyCal3 implements Calculator {
     }
 
     System.out.println(c);
+
+    scan.close(); // need to open when running in main again
   }
 
   public void divide() {
@@ -72,6 +78,8 @@ class MyCal3 implements Calculator {
     }
 
     System.out.println(c);
+
+    scan.close(); // need to open when running in main again
   }
 }
 

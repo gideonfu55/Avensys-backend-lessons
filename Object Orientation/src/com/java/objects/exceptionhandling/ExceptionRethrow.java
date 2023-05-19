@@ -25,6 +25,8 @@ class ATM {
     int b = scan.nextInt();
     int c = a / b;
     System.out.println("Result is: " + c);
+
+    scan.close(); // need to open when running in main again
   }
 }
 
