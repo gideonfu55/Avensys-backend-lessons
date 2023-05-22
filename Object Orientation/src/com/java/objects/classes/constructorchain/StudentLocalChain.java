@@ -4,7 +4,7 @@ public class StudentLocalChain {
   /* Local Chaining **/
   class Object {
     public Object() {
-      // Intialise
+      // Initialize
     }
   }
 
