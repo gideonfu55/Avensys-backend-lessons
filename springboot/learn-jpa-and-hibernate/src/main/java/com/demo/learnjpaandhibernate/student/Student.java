@@ -1,9 +1,19 @@
 package com.demo.learnjpaandhibernate.student;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class Student {
 
+  @Id
   private Long id;
+
+  @Column(name = "name")
   private String name;
+
+  @Column(name = "address")
   private String address;
 
   public Student() {
@@ -37,6 +47,15 @@ public class Student {
 
   public void setAddress(String address) {
     this.address = address;
+  }
+
+  @Override
+  public String toString() {
+    return "{" +
+      " id='" + getId() + "'" +
+      ", name='" + getName() + "'" +
+      ", address='" + getAddress() + "'" +
+      "}";
   }
 
 }
