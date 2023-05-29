@@ -23,4 +23,14 @@
 
 ## Spring
 
+- [Bean Scopes (Singleton and Prototype)](https://github.com/gideonfu55/Avensys-Bootcamp-Java/tree/master/spring/learn-spring-framework/src/main/java/com/java/learnspringframework/beanscopes)
+- [Spring Component Building (Gaming Console Example)](https://github.com/gideonfu55/Avensys-Bootcamp-Java/tree/master/spring/learn-spring-framework/src/main/java/com/java/learnspringframework/componentBasic)
+- [Using Configurations](https://github.com/gideonfu55/Avensys-Bootcamp-Java/tree/master/spring/learn-spring-framework/src/main/java/com/java/learnspringframework/configuration)
+- [Dependency Injection and Autowire (Differences in Instance Variable, Setters, Constructors)](https://github.com/gideonfu55/Avensys-Bootcamp-Java/tree/master/spring/learn-spring-framework/src/main/java/com/java/learnspringframework/dependencyInjection)
+- [Jakarta EE](https://github.com/gideonfu55/Avensys-Bootcamp-Java/tree/master/spring/learn-spring-framework/src/main/java/com/java/learnspringframework/jakartaEE)
+- [Lazy and Eager Initialization](https://github.com/gideonfu55/Avensys-Bootcamp-Java/blob/master/spring/learn-spring-framework/src/main/java/com/java/learnspringframework/lazyInitialization/LazyInitializationApplication.java)
+- [Post Construct and Pre Destroy](https://github.com/gideonfu55/Avensys-Bootcamp-Java/tree/master/spring/learn-spring-framework/src/main/java/com/java/learnspringframework/postandpre)
+- [XML Bean Injection](https://github.com/gideonfu55/Avensys-Bootcamp-Java/tree/master/spring/learn-spring-framework/src/main/java/com/java/learnspringframework/XML)
+- [Class Assignment - all Spring Concepts (Data Provider)](https://github.com/gideonfu55/Avensys-Bootcamp-Java/tree/master/spring/learn-spring-framework/src/main/java/com/java/learnspringframework)
+
 ## Springboot
