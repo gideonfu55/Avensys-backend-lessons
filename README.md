@@ -34,3 +34,6 @@
 - [Class Assignment - all Spring Concepts (Data Provider)](https://github.com/gideonfu55/Avensys-Bootcamp-Java/tree/master/spring/learn-spring-framework/src/main/java/com/java/learnspringframework)
 
 ## Springboot
+
+- [Spring Boot Introduction](https://github.com/gideonfu55/Avensys-Bootcamp-Java/tree/master/springboot/learn-spring-boot)
+- [JDBC, JPA, Hibernate and Spring Data JPA](https://github.com/gideonfu55/Avensys-Bootcamp-Java/tree/master/springboot/learn-jpa-and-hibernate)
