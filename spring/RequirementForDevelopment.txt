@@ -1,0 +1,21 @@
+public interface DataProvider
+	int[] provideData();
+
+public class FirstDataCollector implements DataProvider
+	public int[] provideData()
+		return new int[] {10,20,30,40,50};
+
+public class SecondDataCollector implements DataProvider
+	public int[] provideData()
+		return new int[] {1,3,5,7,9};
+
+public class BusinessCaluculator
+	public int findMaxValue()
+		return Arrays.stream(dataProvider.provideData()).max().orElse(0);
+-------------------------------------------------------------------------------------------
+create the classes and interface as and when require
+Use Constructor Injection to inject the dependecies
+Make FirstDataCollector as primary
+Create Spring Context
+use the resptive annonations
+Retrieve BusinessCaluculator bean and run findMaxValue()

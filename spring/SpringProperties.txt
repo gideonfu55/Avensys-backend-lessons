@@ -1,0 +1,79 @@
+Annotations
+-------------------------------------------------------------------------------------------------------
+@Configuration
+- Like a sort of application runner, used for getting beans and using the methods within the beans.
+
+@ComponentScan
+- Use it to look into declared package paths and search for beans.
+
+@Bean
+- Use it on methods to create them as an instance within an @Configuration class.
+
+@Component
+- Used on classes to make them a (class-level) bean which could be injected in your configuration.
+
+@Service
+- Like @Component, except that it means the annotated class is more specific and contains specific business-layer operations/logic.
+
+@Controller
+- Like @Component, except that is means the annotated class contains handler methods that calls the service layer.
+
+@Repository
+- Like @Component, except that is means the annotated class is connected to the database and contains CRUD operations methods.
+
+@Primary
+- Identifies a class the primary bean that is used during Dependency Injection, in case there are multiple beans of the same type and it leads to an error.
+
+@Qualifier
+- The identifies another class that can be used as a 'secondary' bean when the qualifier annotation is used within the constructor.
+
+@Lazy
+- Makes it that the annotated bean will be initialized only when it is first made used of in the application, as opposed to being initialized at the start of the application by default.
+
+@Scope(value=Configurable.SCOPE_PROTOTYPE)
+- The annotated class with have many bean object references for different instances, per Spring IOC container
+
+@Scope(value=Configurable.SCOPE_SINGLETON)
+- Default: this means only one object is created per Spring IOC container, and the same object is resused when you call it.
+
+@PostConstruct
+- This is for invoking the method immediately after the bean's initialization, but before it is called.
+
+@PreDestroy
+- This is for invoking the method just before the bean is removed from the container (to perform cleanup tasks).
+
+@Named
+- This is used in the place of @Component, if you are using the Jakarta Dependency Injection.
+
+@Inject
+- This is used in the place of @Autowired, if you are using the Jakarta Dependency Injection.
+
+------------------------------------------------------------------------------------------------------
+Concepts
+-------------------------------------------------------------------------------------------------------
+DependencyInjection
+- A process provided by Spring to achieve loose coupling between classes and make them independent.
+
+ConstructorInjection
+- Using this approach removes the need to autowire a constructor in a Component class.
+
+SetterInjection
+- Using this approach requires @Autowire annotation for setters of a Component class.
+
+FieldInjection
+- Similar to SetterInjection, this approach requires you to autowire the instance variables of the Component class.
+
+IOC Container
+- Inversion of Control container responsible containing  beans.
+
+BeanFactory
+- Core interface for managing beans in Spring.
+
+ApplicationContext
+- Like a sort of 'workspace' within your application for you to configure your beans.
+
+SpringBeans
+- Like a Lego building block of your Spring application, they provide the key functions (within annotated classes and methods) for your project.
+
+Auto-Wiring
+- Enables injection of beans in your application.
