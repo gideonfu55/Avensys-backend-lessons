@@ -1,0 +1,6 @@
+SELECT * FROM STUDENT
+
+INSERT INTO STUDENT (id, name, address)
+VALUES(1, 'Gideon', 'Singapore');
+
+DELETE from STUDENT where id = 1;
