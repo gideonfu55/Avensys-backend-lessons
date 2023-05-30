@@ -42,15 +42,3 @@ public class CustomerCommandLineRunner implements CommandLineRunner {
   }
   
 }
-
-// customerJpaRepository.insert(new Customer(4L, "Jack", "Singapore"));
-// customerJpaRepository.insert(new Customer(5L, "Kim", "New York"));
-// customerJpaRepository.insert(new Customer(6L, "Peter", "Malaysia"));
-// customerJpaRepository.deleteById(6L);
-// System.out.println(customerJpaRepository.findById(1L));
-
-// customerSpringDataJpaRepository.save(new Customer(7L, "Tony", "Singapore"));
-// customerSpringDataJpaRepository.save(new Customer(8L, "Sarah", "New York"));
-// customerSpringDataJpaRepository.save(new Customer(9L, "Martha", "Malaysia"));
-// customerSpringDataJpaRepository.deleteById(3L);
-// System.out.println(customerSpringDataJpaRepository.findById(1L));
