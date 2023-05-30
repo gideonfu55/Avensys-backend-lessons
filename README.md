@@ -1,4 +1,4 @@
-# Lesson Folder Structure
+# Backend Lesson Structure
 
 ## Java
 
