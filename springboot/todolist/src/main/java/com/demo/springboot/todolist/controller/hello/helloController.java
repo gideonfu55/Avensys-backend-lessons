@@ -1,4 +1,4 @@
-package com.demo.springboot.todolist.controller;
+package com.demo.springboot.todolist.controller.hello;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
