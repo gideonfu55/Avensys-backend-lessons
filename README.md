@@ -35,6 +35,6 @@
 
 ## Springboot
 
-- [Spring Boot Introduction](https://github.com/gideonfu55/Avensys-Bootcamp-Java/tree/master/springboot/learn-spring-boot)
-- [JDBC, JPA, Hibernate and Spring Data JPA](https://github.com/gideonfu55/Avensys-Bootcamp-Java/tree/master/springboot/learn-jpa-and-hibernate)
+- [Spring Boot Introduction]([https://github.com/gideonfu55/Avensys-Bootcamp-Java/tree/master/springboot/learn-spring-boot](https://github.com/gideonfu55/Avensys-backend-lessons/tree/master/springboot/learn-spring-boot/src/main/java/com/demo/learnspringboot)
+- [JDBC, JPA, Hibernate and Spring Data JPA](https://github.com/gideonfu55/Avensys-backend-lessons/tree/master/springboot/learn-jpa-and-hibernate/src/main/java/com/demo/learnjpaandhibernate)
 - [TodoList Webapp Project](https://github.com/gideonfu55/Avensys-backend-lessons/tree/master/springboot/todolist/src)
