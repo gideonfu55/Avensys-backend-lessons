@@ -5,6 +5,7 @@ import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class LoginController {
@@ -26,5 +27,12 @@ public class LoginController {
   public String logoutTwo(@PathVariable("name") String name, ModelMap model) {
     model.put("name", name);
     return "logout";
+  }
+
+  // For request param:
+  @RequestMapping("welcome")
+  public String welcome(@RequestParam String traineeName, ModelMap model) {
+    model.put("traineeName", traineeName);
+    return "welcome";
   }
 }
