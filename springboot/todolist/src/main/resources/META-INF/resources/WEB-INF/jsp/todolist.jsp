@@ -22,28 +22,32 @@
   </head>
 
   <body>
-    <div>Hi ${name}, Welcome to your Todolist Page!</div>
+    <h3>Hi ${name}, Welcome to your Todolist Page!</h3>
+    <hr>
     <br>
-    <div>Here is your list of todo items: </div>
-    <br>
+    <h3>Here is your list of todo items: </h3>
     <!-- <div>${todos}</div> -->
     <table>
-      <tr>
-        <th>ID</th>
-        <th>Username</th>
-        <th>Description</th>
-        <th>Target Date</th>
-        <th>Completion</th>
-      </tr>
-      <c:forEach var="category" items="${todos}">
+      <thead>
         <tr>
-          <td>${category.id}</td>
-          <td>${category.username}</td>
-          <td>${category.description}</td>
-          <td>${category.targetDate}</td>
-          <td>${category.done}</td>
+          <th>ID</th>
+          <th>Username</th>
+          <th>Description</th>
+          <th>Target Date</th>
+          <th>Completion</th>
         </tr>
-      </c:forEach>
+      </thead>
+      <tbody>
+        <c:forEach var="category" items="${todos}">
+          <tr>
+            <td>${category.id}</td>
+            <td>${category.username}</td>
+            <td>${category.description}</td>
+            <td>${category.targetDate}</td>
+            <td>${category.done}</td>
+          </tr>
+        </c:forEach>
+      </tbody>
     </table>
   </body>
 </html>
