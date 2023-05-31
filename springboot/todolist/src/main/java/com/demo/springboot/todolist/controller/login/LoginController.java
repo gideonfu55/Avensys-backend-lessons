@@ -5,34 +5,45 @@ import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class LoginController {
 
-  @RequestMapping("login")
-  public String login() {
+  private AuthenticationService authenticationService;
+
+  public LoginController(AuthenticationService authenticationService) {
+    super();
+    this.authenticationService = authenticationService;
+  }
+
+  @RequestMapping(value = "login", method = RequestMethod.GET)
+  public String gotologinPage() {
     return "login";
   }
 
-  // Introducing model.addAttribute
+  // Login Authentication for Welcome Page:
+  @RequestMapping(value = "login", method = RequestMethod.POST)
+  public String gotoWelcomePage(@RequestParam String name, @RequestParam String password, ModelMap model) {
+    if (authenticationService.authenticateUser(name, password)) {
+      model.put("name", name);
+      return "welcome";
+    }
+    model.put("errorMessage", "Invalid credentials. Please try again.");
+    return "login";
+  }
+
   @RequestMapping("logout/{name}")
   public String logout(@PathVariable("name") String name, Model model) {
     model.addAttribute("name", name);
     return "logout";
   }
 
-  // OR use ModelMap
   @RequestMapping("logouttwo/{name}")
   public String logoutTwo(@PathVariable("name") String name, ModelMap model) {
     model.put("name", name);
     return "logout";
   }
 
-  // For request param:
-  @RequestMapping("welcome")
-  public String welcome(@RequestParam String traineeName, ModelMap model) {
-    model.put("traineeName", traineeName);
-    return "welcome";
-  }
 }
