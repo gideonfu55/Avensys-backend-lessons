@@ -12,6 +12,7 @@
         border: 2px solid blue;
         margin-left: 25%;
         margin-top: 30vh;
+        padding-bottom: 15px;
       }
     </style>
   </head>
@@ -28,7 +29,7 @@
         <input type="password" name="password"  placeholder="Password">
         <br><br>
         <center>
-          <button type="submit" style="width: 75px;">Login</button>
+          <button type="submit" style="width: 75px; margin-top: 5px;">Login</button>
         </center>
       </form>
     </div>
