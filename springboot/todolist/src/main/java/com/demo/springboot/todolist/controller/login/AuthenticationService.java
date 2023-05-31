@@ -14,8 +14,8 @@ public class AuthenticationService {
     // Initialize the map with valid usernames and passwords
     validUsers = new HashMap<>();
     validUsers.put("Gideon", "password123");
-    validUsers.put("Bruce Wayne", "iambatman");
-    validUsers.put("Tony Stark", "iamironman");
+    validUsers.put("brucewayne", "iambatman");
+    validUsers.put("tonystark", "iamironman");
     // Add more valid users as needed
   }
 
