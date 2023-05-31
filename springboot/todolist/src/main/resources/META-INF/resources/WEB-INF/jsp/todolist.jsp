@@ -24,9 +24,7 @@
   <body>
     <h3>Hi ${name}, Welcome to your Todolist Page!</h3>
     <hr>
-    <br>
     <h3>Here is your list of todo items: </h3>
-    <!-- <div>${todos}</div> -->
     <table>
       <thead>
         <tr>
