@@ -1,5 +1,7 @@
 package com.demo.employeeportal.entity;
 
+import org.springframework.format.annotation.NumberFormat;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -29,6 +31,7 @@ public class Employee {
   private String title;
 
   @Column(name = "salary")
+  @NumberFormat(pattern = "#0.00")
   private double salary;
 
   public Employee() {
