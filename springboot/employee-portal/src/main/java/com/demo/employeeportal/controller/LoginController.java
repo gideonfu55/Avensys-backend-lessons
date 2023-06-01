@@ -2,6 +2,7 @@ package com.demo.employeeportal.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -32,9 +33,16 @@ public class LoginController {
       model.put("name", name);
       return "welcome";
     }
-    
+
     model.put("errorMessage", "Invalid credentials. Please try again.");
     return "login";
+  }
+
+  // Logout for user:
+  @RequestMapping("logout/{name}")
+  public String logout(@PathVariable("name") String name, ModelMap model) {
+    model.addAttribute("name", name);
+    return "logout";
   }
 
 }
