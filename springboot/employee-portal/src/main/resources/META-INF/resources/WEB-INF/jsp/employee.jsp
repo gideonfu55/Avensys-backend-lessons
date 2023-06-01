@@ -3,30 +3,37 @@
 
 <html>
   <head>
-    <title>Add Todo Page</title>
+    <title>Add Employee Page</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
   </head>
 
   <body>
     <div class="container border border-info border-3 rounded-3 mt-5 p-4">
-      <h3 class="fw-bold">Enter Todo Details</h3>
-      <form:form method="post" modelAttribute="todo">
+      <h3 class="fw-bold">Enter Employee Details</h3>
+      <form:form method="post" modelAttribute="employee">
         <br>
         <form:input type="hidden" path="id"/>
-        <form:input type="hidden" path="username"/>
 
-        <label>Description:</label>
-        <form:input class="mx-2" type="text" path="description" required="required"/>
+        <label>Employee Name:</label>
+        <form:input class="w-100" type="text" path="name" required="required"/>
+
+        <label>Address:</label>
+        <form:input class="mx-2 w-100" type="text" path="address" required="required"/>
         <span class="text-danger mx-2">
-          <form:errors path="description"/>
+          <form:errors path="address"/>
         </span>
 
         <br><br>
-        <label>Target Date:</label>
-        <form:input class="mx-2" type="date" path="targetDate" required="required"/>
+        <label>Title:</label>
+        <form:input class="mx-2 w-100" type="text" path="title" required="required"/>
+        <span class="text-danger mx-2">
+          <form:errors path="address"/>
+        </span>
 
-        <form:input type="hidden" path="done"/>
+        <br><br>
+        <label>Salary:</label>
+        <form:input class="mx-2 w-100" type="number" path="salary" required="required"/>
 
         <br><br>
         <button class="btn btn-sm btn-success">Submit</button>

@@ -4,12 +4,15 @@ import java.util.List;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
 import com.demo.employeeportal.entity.Employee;
 import com.demo.employeeportal.service.EmployeeService;
+
+import jakarta.validation.Valid;
 
 @Controller
 @SessionAttributes("name")
@@ -35,6 +38,18 @@ public class EmployeeController {
     Employee employee = new Employee(null, null, null, 0);
     model.put("employee", employee);
     return "employee";
-  } 
+  }
+
+  // Adding a new employee:
+  @RequestMapping(value = "add-employee", method = RequestMethod.POST)
+  public String addNewTodo(ModelMap model, @Valid Employee employee, BindingResult result) {
+
+    if (result.hasErrors()) {
+      return "employee";
+    }
+
+    employeeService.addEmployee(employee.getName(), employee.getAddress(), employee.getTitle(), employee.getSalary());
+    return "redirect:employeelist";
+  }
 
 }

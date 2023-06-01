@@ -19,5 +19,10 @@ public class EmployeeService {
   public List<Employee> findAllEmployees() {
     return employeeRepository.findAll();
   }
+
+  public void addEmployee(String name, String address, String title, double salary) {
+    
+
+  }
   
 }
