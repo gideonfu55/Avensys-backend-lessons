@@ -13,26 +13,27 @@
   </head>
 
   <body>
-    <div class="container border border-info mt-5 p-5">
-      <h3>Enter Todo Details</h3>
+    <div class="container border border-info border-3 rounded-3 mt-5 p-4">
+      <h3 class="fw-bold">Enter Todo Details</h3>
       <form:form method="post" modelAttribute="todo">
         <br>
+        <form:input type="hidden" path="id"/>
+        <form:input type="hidden" path="username"/>
+
         <label>Description:</label>
-        <form:input type="text" path="description" required="required"/>
+        <form:input class="mx-2" type="text" path="description" required="required"/>
         <span class="text-danger mx-2">
           <form:errors path="description"/>
         </span>
 
-        <form:input type="hidden" path="id"/>
-
         <br><br>
         <label>Target Date:</label>
-        <form:input type="date" path="targetDate" required="required"/>
+        <form:input class="mx-2" type="date" path="targetDate" required="required"/>
 
         <form:input type="hidden" path="done"/>
 
         <br><br>
-        <button class="btn btn-success">Submit</button>
+        <button class="btn btn-sm btn-success">Submit</button>
       </form:form>
     </div>
 

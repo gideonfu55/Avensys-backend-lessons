@@ -6,12 +6,14 @@ import java.util.List;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.SessionAttribute;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
+import jakarta.servlet.http.HttpSession;
 import jakarta.validation.Valid;
 
 @Controller
@@ -60,7 +62,7 @@ public class TodoController {
     return "redirect:todolist";
   }
 
-  // Update an existing todo:
+  // Update an existing todo - returning to add todo page with existing todo details:
   @RequestMapping(value = "update-todo", method = RequestMethod.GET)
   public String showUpdateTodoPage(@RequestParam int id, ModelMap model) {
     Todo todo = todoService.findById(id);
@@ -69,10 +71,24 @@ public class TodoController {
   }
 
   @RequestMapping(value = "update-todo", method = RequestMethod.POST)
-  public String updateTodo(@RequestParam int id, ModelMap model) {
-    Todo todo = todoService.findById(id);
-    model.addAttribute("todo", todo);
-    return "todo";
+  public String updateTodo(ModelMap model, @Valid Todo todo, BindingResult result) {
+    if (result.hasErrors()) {
+      return "todo";
+    }
+    todoService.updateTodo(todo);
+    return "redirect:todolist";
   }
 
+  // Update an existing do - edit current details and return to todolist page:
+  // @RequestMapping(value = "update-todo", method = RequestMethod.POST)
+  // public String updateTodo(@ModelAttribute("todo") @Valid Todo todo,
+  // BindingResult result, HttpSession session) {
+  // if (result.hasErrors()) {
+  // return "todo";
+  // }
+  // String username = (String)session.getAttribute("name");
+  // todo.setUsername(username);
+  // todoService.updateTodo(todo);
+  // return "redirect:todolist";
+  // }
 }

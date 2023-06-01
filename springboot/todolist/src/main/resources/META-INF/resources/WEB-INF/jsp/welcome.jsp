@@ -21,7 +21,7 @@
       <div class="welcomeBox">
           <h3 style="color: green;">Credentials verified.</h3>
           <h2>Hi ${name}, Welcome to Learn Springboot Online Course Page</h2>
-          <a href="/todolist"><h3>Manage your todolist page</h3></a>
+          <a href="todolist"><h3>Manage your todolist page</h3></a>
           <h3>Please select your module:</h3>
           <select>
             <option>Learn MVC</option>

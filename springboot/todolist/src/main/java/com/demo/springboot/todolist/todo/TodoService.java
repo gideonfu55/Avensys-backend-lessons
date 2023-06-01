@@ -8,6 +8,8 @@ import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Service;
 
+import jakarta.validation.Valid;
+
 @Service
 public class TodoService {
 
@@ -44,6 +46,11 @@ public class TodoService {
   public void deleteTodoById(int id) {
     Predicate<? super Todo> predicate = todo -> todo.getId() == id;
     todos.removeIf(predicate);
+  }
+
+  public void updateTodo(@Valid Todo todo) {
+    deleteTodoById(todo.getId());
+    todos.add(todo);
   }
 
 }
