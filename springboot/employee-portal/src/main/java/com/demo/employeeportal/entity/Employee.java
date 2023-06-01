@@ -1,7 +1,5 @@
 package com.demo.employeeportal.entity;
 
-import org.springframework.format.annotation.NumberFormat;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -23,11 +21,11 @@ public class Employee {
   private String name;
 
   @Column(name = "address")
-  @Size(min = 20, message = "Enter at least 20 characters for address.")
+  @Size(min = 5, message = "Enter at least 5 characters for address.")
   private String address;
 
   @Column(name = "title")
-  @Size(min = 10, message = "Enter at least 10 characters for title.")
+  @Size(min = 5, message = "Enter at least 5 characters for title.")
   private String title;
 
   @Column(name = "salary")

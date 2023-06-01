@@ -21,8 +21,8 @@ public class EmployeeService {
   }
 
   public void addEmployee(String name, String address, String title, double salary) {
-    
-
+    Employee employee = new Employee(name, address, title, salary);
+    employeeRepository.save(employee);
   }
   
 }

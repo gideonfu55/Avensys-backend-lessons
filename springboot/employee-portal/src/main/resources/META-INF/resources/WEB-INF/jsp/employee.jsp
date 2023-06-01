@@ -16,27 +16,24 @@
         <form:input type="hidden" path="id"/>
 
         <label>Employee Name:</label>
-        <form:input class="w-100" type="text" path="name" required="required"/>
+        <form:input class="mt-2 w-100" type="text" path="name" required="required"/>
 
-        <label>Address:</label>
-        <form:input class="mx-2 w-100" type="text" path="address" required="required"/>
-        <span class="text-danger mx-2">
+        <label class="mt-3">Address:</label>
+        <form:input class="mt-2 w-100" type="text" path="address" required="required"/>
+        <p class="text-danger mt-2">
           <form:errors path="address"/>
-        </span>
+        </p>
 
-        <br><br>
-        <label>Title:</label>
-        <form:input class="mx-2 w-100" type="text" path="title" required="required"/>
-        <span class="text-danger mx-2">
+        <label class="mt-2">Title:</label>
+        <form:input class="mt-2 w-100" type="text" path="title" required="required"/>
+        <p class="text-danger mt-2">
           <form:errors path="address"/>
-        </span>
+        </p>
 
-        <br><br>
-        <label>Salary:</label>
-        <form:input class="mx-2 w-100" type="number" path="salary" required="required"/>
+        <label class="mt-2">Salary:</label>
+        <form:input class="mt-2 w-100" type="number" path="salary" required="required"/>
 
-        <br><br>
-        <button class="btn btn-sm btn-success">Submit</button>
+        <button class="btn btn-md btn-success mt-4">Submit</button>
       </form:form>
     </div>
 
