@@ -59,4 +59,11 @@ public class TodoController {
     return "redirect:todolist";
   }
 
+  // @RequestMapping(value = "update-todo", method = RequestMethod.POST)
+  // public String updateTodo(@RequestParam int id, ModelMap model) {
+  //   Todo todo = todoService.findById(id);
+  //   model.addAttribute("todo", todo);
+  //   return "todo";
+  // }
+
 }

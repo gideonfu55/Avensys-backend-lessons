@@ -30,6 +30,12 @@ public class TodoService {
       .collect(Collectors.toList());
   }
 
+  public Todo findById(int id) {
+    Predicate<? super Todo> predicate = todo -> todo.getId() == id;
+    Todo todo = todos.stream().filter(predicate).findFirst().get();
+    return todo;
+  }
+
   public void addTodo(String username, String description, LocalDate targetDate, boolean done) {
     Todo todo = new Todo(++todoCount, username, description, targetDate, done);
     todos.add(todo);

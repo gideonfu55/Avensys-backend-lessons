@@ -33,23 +33,25 @@
       <table class="table mt-3">
         <thead>
           <tr class="table-success">
-            <th>ID</th>
+            <th style="display: none;">ID</th>
             <th>Username</th>
             <th>Description</th>
             <th>Target Date</th>
             <th>Completion</th>
+            <th></th>
             <th></th>
           </tr>
         </thead>
         <tbody>
           <c:forEach var="category" items="${todos}">
             <tr>
-              <td>${category.id}</td>
+              <td style="display: none;">${category.id}</td>
               <td>${category.username}</td>
               <td>${category.description}</td>
               <td>${category.targetDate}</td>
               <td>${category.done}</td>
-              <td><a href="delete-todo?id=${category.id}" class="btn btn-sm btn-warning">Delete ${category.id}</a></td>
+              <td><a href="delete-todo?id=${category.id}" class="btn btn-sm btn-warning">Delete</a></td>
+              <td><a href="update-todo?id=${category.id}" class="btn btn-sm btn-primary">Update</a></td>
             </tr>
           </c:forEach>
         </tbody>
