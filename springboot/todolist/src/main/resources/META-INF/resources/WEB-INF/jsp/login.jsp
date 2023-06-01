@@ -11,8 +11,9 @@
         justify-content: center;
         border: 2px solid blue;
         margin-left: 25%;
-        margin-top: 30vh;
+        margin-top: 25vh;
         padding-bottom: 15px;
+        border-radius: 10px;
       }
     </style>
   </head>

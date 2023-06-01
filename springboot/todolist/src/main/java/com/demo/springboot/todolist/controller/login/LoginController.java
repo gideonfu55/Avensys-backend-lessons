@@ -42,10 +42,10 @@ public class LoginController {
     return "logout";
   }
 
-  @RequestMapping("logouttwo/{name}")
-  public String logoutTwo(@PathVariable("name") String name, ModelMap model) {
-    model.put("name", name);
-    return "logout";
-  }
-
 }
+
+// @RequestMapping("logouttwo/{name}")
+// public String logoutTwo(@PathVariable("name") String name, ModelMap model) {
+// model.put("name", name);
+// return "logout";
+// }

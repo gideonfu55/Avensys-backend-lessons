@@ -6,23 +6,9 @@
     <title>Todo Page</title>
 
     <style>
-
-      /* table {
-        border-collapse: collapse;
-        width: 90%;
-      } */
-
-      /*
-      th, td {
-        padding: 8px;
-        text-align: left;
-        border-bottom: 1px solid #ddd;
-        height: 30px;
+      body {
+        padding: 0 10px;
       }
-
-      th {
-        background-color: #f2f2f2;
-      } */
     </style>
   </head>
 
