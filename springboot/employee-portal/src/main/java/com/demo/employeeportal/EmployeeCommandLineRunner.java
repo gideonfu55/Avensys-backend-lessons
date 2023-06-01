@@ -3,7 +3,7 @@ package com.demo.employeeportal;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
-import com.demo.employeeportal.employee.Employee;
+import com.demo.employeeportal.entity.Employee;
 import com.demo.employeeportal.repository.EmployeeRepository;
 
 @Component

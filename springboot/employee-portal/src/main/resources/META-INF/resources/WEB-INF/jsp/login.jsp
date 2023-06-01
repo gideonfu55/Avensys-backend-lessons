@@ -5,7 +5,7 @@
   <head>
     <title>Login Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+
     <style>
       body {
         height: 100vh;
@@ -25,8 +25,8 @@
               <h5 class="card-title">Login</h5>
               <form>
                 <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                  <label for="email">Username</label>
+                  <input type="email" class="form-control" id="username" placeholder="Enter your email">
                 </div>
                 <div class="form-group">
                   <label for="password">Password</label>
