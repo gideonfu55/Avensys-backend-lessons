@@ -20,7 +20,6 @@ public class AuthenticationService {
   }
 
   public boolean authenticateUser (String username, String password) {
-
     String validPassword = validUsers.get(username);
     return validPassword != null && validPassword.equals(password);
   }
