@@ -26,7 +26,7 @@
         <form:input type="hidden" path="id"/>
 
         <br><br>
-        <label>Target Date</label>
+        <label>Target Date:</label>
         <form:input type="date" path="targetDate" required="required"/>
 
         <form:input type="hidden" path="done"/>
