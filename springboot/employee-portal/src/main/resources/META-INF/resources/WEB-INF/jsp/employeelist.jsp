@@ -13,7 +13,7 @@
   </head>
 
   <body>
-    <h6 class="pt-3 fw-bold">Hi ${name}, welcome to the employee list page!</h6>
+    <h6 class="pt-3 fw-bold">Hi ${name}, welcome to the employee list page. Access level: add, update and delete.</h6>
     <hr>
     <h6 class="fw-bold">This is the list of current employees in the portal:</h6>
       <table class="table mt-3">
