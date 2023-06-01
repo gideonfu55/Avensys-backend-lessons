@@ -38,6 +38,7 @@
             <th>Description</th>
             <th>Target Date</th>
             <th>Completion</th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
@@ -48,12 +49,13 @@
               <td>${category.description}</td>
               <td>${category.targetDate}</td>
               <td>${category.done}</td>
+              <td><a href="delete-todo?id=${category.id}" class="btn btn-sm btn-warning">Delete ${category.id}</a></td>
             </tr>
           </c:forEach>
         </tbody>
       </table>
 
-    <a href="add-todo" class="btn btn-success m-3">Add a todo</a>
+    <a href="add-todo" class="btn btn-success mx-3 mt-2">Add a todo</a>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
   </body>
