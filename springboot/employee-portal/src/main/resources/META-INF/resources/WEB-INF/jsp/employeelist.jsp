@@ -1,4 +1,5 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
 <html>
   <head>
@@ -37,7 +38,7 @@
                 <td>${category.name}</td>
                 <td>${category.address}</td>
                 <td>${category.title}</td>
-                <td>${category.salary}</td>
+                <td><fmt:formatNumber value="${category.salary}" type="currency" currencyCode="SGD"/></td>
                 <td><a href="delete-employee?id=${category.id}" class="btn btn-sm btn-warning">Delete</a></td>
                 <td><a href="update-employee?id=${category.id}" class="btn btn-sm btn-primary">Update</a></td>
               </tr>
