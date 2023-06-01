@@ -8,7 +8,6 @@ import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.SessionAttribute;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
@@ -47,7 +46,7 @@ public class TodoController {
     if (result.hasErrors()) {
       return "todo";
     }
-    
+
     String username = (String)model.get("name");
     todoService.addTodo(username, todo.getDescription(), todo.getTargetDate(), false);
     return "redirect:todolist";
