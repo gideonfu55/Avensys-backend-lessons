@@ -33,7 +33,8 @@
         <label class="mt-2">Salary:</label>
         <form:input class="mt-2 w-100" type="number" path="salary" required="required"/>
 
-        <button class="btn btn-md btn-success mt-4">Submit</button>
+        <button type="submit" class="btn btn-md btn-success mt-4">Submit</button>
+        <a href="employeelist" class="btn btn-md btn-warning mt-4 mx-2">Return to Employee List</a>
       </form:form>
     </div>
 

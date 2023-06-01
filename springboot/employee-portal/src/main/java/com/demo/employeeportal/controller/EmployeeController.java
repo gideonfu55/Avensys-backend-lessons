@@ -7,6 +7,7 @@ import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
 import com.demo.employeeportal.entity.Employee;
@@ -49,6 +50,13 @@ public class EmployeeController {
     }
 
     employeeService.addEmployee(employee.getName(), employee.getAddress(), employee.getTitle(), employee.getSalary());
+    return "redirect:employeelist";
+  }
+
+  // Delete an existing employee:
+  @RequestMapping("delete-employee")
+  public String deleteEmployee(@RequestParam Long id) {
+    employeeService.deleteEmployeeById(id);
     return "redirect:employeelist";
   }
 

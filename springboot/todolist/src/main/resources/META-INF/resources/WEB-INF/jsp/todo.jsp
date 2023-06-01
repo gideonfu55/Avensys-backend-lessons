@@ -29,7 +29,7 @@
         <form:input type="hidden" path="done"/>
 
         <br><br>
-        <button class="btn btn-sm btn-success">Submit</button>
+        <button type="submit" class="btn btn-sm btn-success">Submit</button>
       </form:form>
     </div>
 

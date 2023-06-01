@@ -1,6 +1,7 @@
 package com.demo.employeeportal.service;
 
 import java.util.List;
+import java.util.function.Predicate;
 
 import org.springframework.stereotype.Service;
 
@@ -24,5 +25,9 @@ public class EmployeeService {
     Employee employee = new Employee(name, address, title, salary);
     employeeRepository.save(employee);
   }
+
+	public void deleteEmployeeById(Long id) {
+    employeeRepository.deleteById(id);
+	}
   
 }
