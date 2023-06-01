@@ -27,9 +27,9 @@
   </head>
 
   <body>
-    <h6 class="pt-3">Hi ${name}, welcome to your Todolist Page!</h6>
+    <h6 class="pt-3 fw-bold">Hi ${name}, welcome to your Todolist Page!</h6>
     <hr>
-    <h6 style="font-weight: bold;">Here is your list of todo items:</h6>
+    <h6 class="fw-bold">Here is your list of todo items:</h6>
       <table class="table mt-3">
         <thead>
           <tr class="table-success">

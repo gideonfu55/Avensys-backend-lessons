@@ -17,11 +17,11 @@
       <form method="post">
         <br>
         <label>Description:</label>
-        <input type="text" name="description">
+        <input type="text" name="description" required>
 
         <br><br>
         <label>Target Date</label>
-        <input type="date" name="targetDate">
+        <input type="date" name="targetDate" required>
 
         <br><br>
         <button class="btn btn-success">Submit</button>

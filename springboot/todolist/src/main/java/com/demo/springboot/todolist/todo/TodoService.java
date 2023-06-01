@@ -12,11 +12,11 @@ public class TodoService {
 
   private static List<Todo> todos = new ArrayList<>();
 
-  private static int todoCount = 1;
+  private static int todoCount = 0;
 
   static {
-    todos.add(new Todo(todoCount++, "Gideon", "Make a todolist webapp", LocalDate.now().plusDays(1), true));
-    todos.add(new Todo(todoCount++, "Gideon", "Get a tech job", LocalDate.now().plusMonths(1), false));
+    todos.add(new Todo(++todoCount, "Gideon", "Make a todolist webapp", LocalDate.now().plusDays(1), true));
+    todos.add(new Todo(++todoCount, "Gideon", "Get a tech job", LocalDate.now().plusMonths(1), false));
 
     // For additional users:
     // todos.add(new Todo(2, "brucewayne", "Save Gotham", LocalDate.now().plusYears(20), false));
@@ -30,7 +30,7 @@ public class TodoService {
   }
 
   public void addTodo(String username, String description, LocalDate targetDate, boolean done) {
-    Todo todo = new Todo(todoCount++, username, description, targetDate, done);
+    Todo todo = new Todo(++todoCount, username, description, targetDate, done);
     todos.add(todo);
   }
 
