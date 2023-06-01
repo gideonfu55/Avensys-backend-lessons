@@ -1,11 +1,25 @@
 package com.demo.employeeportal.employee;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class Employee {
   
+  @Id
   private Long id;
+
+  @Column(name = "name")
   private String name;
+
+  @Column(name = "address")
   private String address;
+
+  @Column(name = "title")
   private String title;
+
+  @Column(name = "salary")
   private double salary;
 
   public Employee(Long id, String name, String address, String title, double salary) {
