@@ -1,13 +1,17 @@
 package com.demo.employeeportal.employee;
 
+import jakarta.annotation.Generated;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
+@Table(name = "employee")
 public class Employee {
   
   @Id
+  @Column(name = "id")
   private Long id;
 
   @Column(name = "name")
