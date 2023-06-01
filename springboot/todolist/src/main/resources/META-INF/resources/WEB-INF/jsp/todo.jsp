@@ -19,6 +19,9 @@
         <br>
         <label>Description:</label>
         <form:input type="text" path="description" required="required"/>
+        <span class="text-danger mx-2">
+          <form:errors path="description"/>
+        </span>
 
         <form:input type="hidden" path="id"/>
 
