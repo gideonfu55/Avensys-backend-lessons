@@ -26,6 +26,10 @@ public class Employee {
   @Column(name = "salary")
   private double salary;
 
+  public Employee() {
+    // Default constructor
+  }
+
   public Employee(Long id, String name, String address, String title, double salary) {
     this.id = id;
     this.name = name;
