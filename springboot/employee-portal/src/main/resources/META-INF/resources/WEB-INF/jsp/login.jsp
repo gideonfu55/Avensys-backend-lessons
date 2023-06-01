@@ -1,14 +1,8 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<p%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-
 <html>
   <head>
     <title>Login Page</title>
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <style>
-
-    </style>
   </head>
 
   <body>
