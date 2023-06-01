@@ -18,11 +18,15 @@
       <form:form method="post" modelAttribute="todo">
         <br>
         <label>Description:</label>
-        <form:input type="text" path="description" required/>
+        <form:input type="text" path="description" required="required"/>
+
+        <form:input type="hidden" path="id"/>
 
         <br><br>
         <label>Target Date</label>
-        <form:input type="date" path="targetDate" required/>
+        <form:input type="date" path="targetDate" required="required"/>
+
+        <form:input type="hidden" path="done"/>
 
         <br><br>
         <button class="btn btn-success">Submit</button>
