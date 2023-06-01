@@ -1,7 +1,10 @@
 package com.demo.employeeportal.service;
 
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 
+import com.demo.employeeportal.entity.Employee;
 import com.demo.employeeportal.repository.EmployeeRepository;
 
 @Service
@@ -13,6 +16,8 @@ public class EmployeeService {
     this.employeeRepository = employeeRepository;
   }
 
-  
+  public List<Employee> findAllEmployees() {
+    return employeeRepository.findAll();
+  }
   
 }

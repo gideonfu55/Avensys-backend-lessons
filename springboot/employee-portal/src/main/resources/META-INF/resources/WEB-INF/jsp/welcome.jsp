@@ -3,20 +3,6 @@
     <title>Welcome Page</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <style>
-      .welcomeBox {
-        display: flex;
-        width: 50%;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        border: 2px solid blue;
-        margin-top: 20vh;
-        padding-bottom: 25px;
-        border-radius: 10px;
-      }
-    </style>
   </head>
   <body>
     <section class="vh-100" style="background-color: #508bfc;">
@@ -28,7 +14,7 @@
                 <h5 style="color:green; display: inline-block" class="mb-2">Credentials verified</h5>
                 <div class="mb-4 mx-2" style="display: inline-block; width: 75px; border-radius: 5px; background-color: red; color: white;">Admin</div>
                 <h5 class="mb-4 fw-bold">Hi ${name}, welcome to the Employee Portal!</h5>
-                <button class="btn btn-info mt-2"><a href="todolist" style="text-decoration: none; color: black;">Click to manage the employee list.</a>
+                <button class="btn btn-info mt-2"><a href="employeelist" style="text-decoration: none; color: black;">Click to manage the employee list.</a>
               </div></button>
             </div>
           </div>
