@@ -2,6 +2,7 @@ package com.demo.employeeportal.controller;
 
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -27,6 +28,7 @@ public class TodoController {
     this.todoService = todoService;
   }
   
+  // Display Employee's Todolist Page:
   @RequestMapping("todolist")
   public String listAllTodos(ModelMap model, @SessionAttribute String name) {
     List<Todo> todos = todoService.findTodosByUsername(name);
@@ -34,11 +36,11 @@ public class TodoController {
     return "todolist";
   }
 
-  // Go to Add Todo Page
+  // Go to Add Todo Page:
   @RequestMapping(value = "add-todo", method = RequestMethod.GET)
   public String showNewTodoPage(ModelMap model) {
     String username = (String)model.get("name");
-    Todo todo = new Todo(0, username, "", LocalDate.now(), false);
+    Todo todo = new Todo(username, "", LocalDate.now(), false);
     model.put("todo", todo);
     return "todo";
   }
@@ -58,15 +60,15 @@ public class TodoController {
 
   // Deleting an existing todo:
   @RequestMapping("delete-todo")
-  public String deleteTodo(@RequestParam int id) {
+  public String deleteTodo(@RequestParam Long id) {
     todoService.deleteTodoById(id);
     return "redirect:todolist";
   }
 
   // Update an existing todo - returning to add todo page with existing todo details:
   @RequestMapping(value = "update-todo", method = RequestMethod.GET)
-  public String showUpdateTodoPage(@RequestParam int id, ModelMap model) {
-    Todo todo = todoService.findById(id);
+  public String showUpdateTodoPage(@RequestParam Long id, ModelMap model) {
+    Optional<Todo> todo = todoService.findById(id);
     model.addAttribute("todo", todo);
     return "todo";
   }
