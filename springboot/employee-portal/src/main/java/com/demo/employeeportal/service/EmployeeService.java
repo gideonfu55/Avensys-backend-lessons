@@ -2,7 +2,6 @@ package com.demo.employeeportal.service;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.function.Predicate;
 
 import org.springframework.stereotype.Service;
 
