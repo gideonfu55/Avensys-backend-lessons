@@ -8,6 +8,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.Size;
 
 @Entity
@@ -31,6 +32,7 @@ public class Employee {
   private String title;
 
   @Column(name = "salary")
+  @Min(value = 1500, message = "Salary must meet minimum wage requirements.")
   @NumberFormat(pattern = "#0.00")
   private double salary;
 
