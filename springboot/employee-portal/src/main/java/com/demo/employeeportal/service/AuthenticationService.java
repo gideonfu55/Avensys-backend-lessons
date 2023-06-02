@@ -20,9 +20,9 @@ public class AuthenticationService {
     validAdmin.put("tonystark", "iamironman");
     // Employees:
     validEmployee = new HashMap<>();
-    validAdmin.put("MuhammadAli", "muhammadali");
-    validAdmin.put("JohnDoe", "johndoe");
-    validAdmin.put("JaneLim", "janelim");
+    validEmployee.put("MuhammadAli", "muhammadali");
+    validEmployee.put("JohnDoe", "johndoe");
+    validEmployee.put("JaneLim", "janelim");
   }
 
   public boolean authenticateAdmin (String username, String password) {

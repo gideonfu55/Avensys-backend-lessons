@@ -13,7 +13,9 @@
             <div class="card shadow-2-strong" style="border-radius: 1rem;">
               <div class="card-body p-5 text-center">
                 <h5 style="color:green; display: inline-block" class="mb-2">Credentials verified</h5>
-                <div class="mb-4 mx-2" style="display: inline-block; width: 75px; border-radius: 5px; background-color: red; color: white;">Admin</div>
+                <div class="mb-4 mx-2 p-1" style="display: inline-block; width: 75px; border-radius: 5px; background-color: red; color: white;">
+                  Admin
+                </div>
                 <h5 class="mb-4 fw-bold">Hi ${name}, welcome to the Employee Portal!</h5>
                 <button class="btn btn-info mt-2"><a href="employeelist" style="text-decoration: none; color: black;">Click to manage the employee list.</a>
               </div></button>
