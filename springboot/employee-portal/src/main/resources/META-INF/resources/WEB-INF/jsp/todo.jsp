@@ -16,20 +16,24 @@
         <form:input type="hidden" path="id"/>
         <form:input type="hidden" path="username"/>
 
-        <label>Description:</label>
-        <form:input class="mx-2" type="text" path="description" required="required"/>
-        <span class="text-danger mx-2">
+        <label class="fw-bold">Description:</label>
+        <form:input class="mt-2 w-100" type="text" path="description" required="required"/>
+        <span class="text-danger" style="font-size: 14px;">
           <form:errors path="description"/>
         </span>
 
         <br><br>
-        <label>Target Date:</label>
-        <form:input class="mx-2" type="date" path="targetDate" required="required"/>
+        <label class="d-block fw-bold">Target Date:</label>
+        <form:input class="mt-2" type="date" path="targetDate" required="required"/>
+        <span class="text-danger mx-2" style="font-size: 14px">
+          <form:errors path="targetDate"/>
+        </span>
 
         <form:input type="hidden" path="done"/>
 
-        <br><br>
-        <button type="submit" class="btn btn-sm btn-success">Submit</button>
+        <br>
+        <button type="submit" class="btn btn-md btn-success mt-5">Submit</button>
+        <a href="todolist" class="btn btn-md btn-warning mt-5 mx-2">Return to Todolist</a>
       </form:form>
     </div>
 
