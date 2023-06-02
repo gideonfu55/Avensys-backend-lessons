@@ -29,7 +29,7 @@ public class TodoController {
   
   @RequestMapping("todolist")
   public String listAllTodos(ModelMap model, @SessionAttribute String name) {
-    List<Todo> todos = todoService.findByUsername(name);
+    List<Todo> todos = todoService.findTodosByUsername(name);
     model.addAttribute("todos", todos);
     return "todolist";
   }

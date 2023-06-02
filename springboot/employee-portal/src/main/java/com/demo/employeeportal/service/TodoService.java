@@ -3,47 +3,39 @@ package com.demo.employeeportal.service;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Predicate;
-import java.util.stream.Collectors;
+import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
 import com.demo.employeeportal.entity.Todo;
+import com.demo.employeeportal.repository.TodoRepository;
 
 import jakarta.validation.Valid;
 
 @Service
 public class TodoService {
 
-  
-
-
-
-  public List<Todo> findByUsername(String username) {
-    return todos.stream()
-      .filter(todo -> todo.getUsername().equals(username))
-      .collect(Collectors.toList());
-  }
-
-  public Todo findById(int id) {
-    Predicate<? super Todo> predicate = todo -> todo.getId() == id;
-    Todo todo = todos.stream().filter(predicate).findFirst().get();
-    return todo;
-  }
+  private TodoRepository todoRepository;
 
   public void addTodo(String username, String description, LocalDate targetDate, boolean done) {
-    Todo todo = new Todo(++todoCount, username, description, targetDate, done);
-    todos.add(todo);
+    Todo todo = new Todo(username, description, targetDate, done);
+    todoRepository.save(todo);
   }
 
-  public void deleteTodoById(int id) {
-    Predicate<? super Todo> predicate = todo -> todo.getId() == id;
-    todos.removeIf(predicate);
+  public List<Todo> findTodosByUsername(String username) {
+    return todoRepository.findAllByUsername(username);
+  }
+
+  public Optional<Todo> findById(Long id) {
+    return todoRepository.findById(id);
   }
 
   public void updateTodo(@Valid Todo todo) {
-    deleteTodoById(todo.getId());
-    todos.add(todo);
+    todoRepository.save(todo);
+  }
+
+  public void deleteTodoById(Long id) {
+    todoRepository.deleteById(id);
   }
 
 }

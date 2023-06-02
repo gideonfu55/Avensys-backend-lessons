@@ -19,17 +19,17 @@ public class EmployeeService {
     this.employeeRepository = employeeRepository;
   }
 
+  public void addEmployee(String name, String address, String title, double salary) {
+    Employee employee = new Employee(name, address, title, salary);
+    employeeRepository.save(employee);
+  }
+
   public Optional<Employee> findEmployeeById(Long id) {
     return employeeRepository.findById(id);
   }
 
   public List<Employee> findAllEmployees() {
     return employeeRepository.findAll();
-  }
-
-  public void addEmployee(String name, String address, String title, double salary) {
-    Employee employee = new Employee(name, address, title, salary);
-    employeeRepository.save(employee);
   }
 
   public void updateEmployee(@Valid Employee employee) {
