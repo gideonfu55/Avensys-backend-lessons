@@ -38,3 +38,6 @@
 - [Spring Boot Introduction](https://github.com/gideonfu55/Avensys-backend-lessons/tree/master/springboot/learn-spring-boot/src/main/java/com/demo/learnspringboot)
 - [JDBC, JPA, Hibernate and Spring Data JPA](https://github.com/gideonfu55/Avensys-backend-lessons/tree/master/springboot/learn-jpa-and-hibernate/src/main/java/com/demo/learnjpaandhibernate)
 - [TodoList Webapp Project](https://github.com/gideonfu55/Avensys-backend-lessons/tree/master/springboot/todolist/src/main/java/com/demo/springboot/todolist)
+- Employee Portal Project
+  - [Controller, Service, Repository Layer](https://github.com/gideonfu55/Avensys-backend-lessons/tree/master/springboot/employee-portal/src/main/java/com/demo/employeeportal)
+  - [JSP Page](https://github.com/gideonfu55/Avensys-backend-lessons/tree/master/springboot/employee-portal/src/main/resources/META-INF/resources/WEB-INF/jsp)
