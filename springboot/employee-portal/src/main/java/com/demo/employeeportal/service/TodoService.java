@@ -17,6 +17,10 @@ public class TodoService {
 
   private TodoRepository todoRepository;
 
+  public TodoService(TodoRepository todoRepository) {
+    this.todoRepository = todoRepository;
+  }
+
   public void addTodo(String username, String description, LocalDate targetDate, boolean done) {
     Todo todo = new Todo(username, description, targetDate, done);
     todoRepository.save(todo);
