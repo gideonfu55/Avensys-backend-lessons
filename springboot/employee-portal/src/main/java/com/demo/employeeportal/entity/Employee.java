@@ -32,7 +32,7 @@ public class Employee {
   private String title;
 
   @Column(name = "salary")
-  @Min(value = 1500, message = "Salary must meet minimum wage requirements.")
+  @Min(value = 1500, message = "Salary must meet minimum wage requirement of $1,500.00.")
   @NumberFormat(pattern = "#0.00")
   private double salary;
 
