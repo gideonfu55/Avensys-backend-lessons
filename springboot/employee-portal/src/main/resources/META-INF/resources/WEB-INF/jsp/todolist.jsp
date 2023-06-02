@@ -16,30 +16,30 @@
     <h6 class="pt-3 fw-bold">Hi ${name}, welcome to your Todolist Page!</h6>
     <hr>
     <h6 class="fw-bold">Here is your list of todo items:</h6>
-      <table class="table mt-3">
+      <table class="table border border-dark border-3 mt-3">
         <thead">
-          <tr class="table-success">
+          <tr class="table-info">
             <th style="display: none;">ID</th>
-            <th class="col-2">Username</th>
-            <th class="col-4">Description</th>
-            <th class="col-1">Target Date</th>
-            <th class="text-center col-2">Completion</th>
-            <th class="col-1"></th>
-            <th class="col-1"></th>
+            <th width="10%">Username</th>
+            <th width="15%">Description</th>
+            <th width="5%">Target Date</th>
+            <th width="10%" class="text-center">Completion</th>
+            <th width="5%"></th>
+            <th width="5%"></th>
           </tr>
         </thead>
         <tbody>
           <c:forEach var="category" items="${todos}">
             <tr>
               <td style="display: none;">${category.id}</td>
-              <td class="col-2">${category.username}</td>
-              <td class="col-4">${category.description}</td>
-              <td class="col-1">${category.targetDate}</td>
-              <td class="text-center col-2" style="padding-top: 12px;">
+              <td>${category.username}</td>
+              <td>${category.description}</td>
+              <td>${category.targetDate}</td>
+              <td class="text-center" style="padding-top: 12px;">
                 <input type="checkbox" ${category.done ? 'checked' : ''}>
               </td>
-              <td class="col-1"><a href="delete-todo?id=${category.id}" class="btn btn-sm btn-warning">Delete</a></td>
-              <td class="col-1"><a href="update-todo?id=${category.id}" class="btn btn-sm btn-primary">Update</a></td>
+              <td><a href="delete-todo?id=${category.id}" class="btn btn-sm btn-warning">Delete</a></td>
+              <td><a href="update-todo?id=${category.id}" class="btn btn-sm btn-primary">Update</a></td>
             </tr>
           </c:forEach>
         </tbody>

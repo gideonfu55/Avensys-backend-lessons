@@ -17,24 +17,25 @@
     <h6 class="pt-3 fw-bold">Hi ${name}, welcome to the employee list page! <br><br>Current access level: add, update and delete.</h6>
     <hr>
 
-    <div class="container border border-info border-3 rounded-3 mt-4 py-4 px-5">
+    <div class="section section-content-p30">
+      <div class="container-fluid">
       <h6 class="fw-bold">List of employees in the portal:</h6>
-        <table class="table mt-3">
+        <table class="table border border-dark border-3 mt-3">
           <thead>
             <tr class="table-success">
-              <th>ID</th>
-              <th>Name</th>
-              <th>Address</th>
-              <th>Title</th>
-              <th>Salary</th>
-              <th></th>
-              <th></th>
+              <th width="5%">ID</th>
+              <th width="15%">Name</th>
+              <th width="20%">Address</th>
+              <th width="20%">Title</th>
+              <th width="15%">Salary</th>
+              <th width="5%"></th>
+              <th width="5%"></th>
             </tr>
           </thead>
           <tbody>
             <c:forEach var="category" items="${employees}">
               <tr>
-                <td>${category.id}</td>
+                <td style="width: 5px;">${category.id}</td>
                 <td>${category.name}</td>
                 <td>${category.address}</td>
                 <td>${category.title}</td>
@@ -47,6 +48,7 @@
         </table>
 
       <a href="add-employee" class="btn btn-success mx-2 mt-2">Add new employee</a>
+      </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
