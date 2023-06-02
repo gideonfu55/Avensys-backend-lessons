@@ -9,7 +9,7 @@
   </head>
 
   <body>
-    <div class="container border border-info border-3 rounded-3 mt-5 p-4">
+    <div class="container border border-info border-3 rounded-3 mt-3 p-4">
       <h3 class="fw-bold">Enter Employee Details</h3>
       <form:form method="post" modelAttribute="employee">
         <br>
@@ -18,19 +18,19 @@
         <label>Employee Name:</label>
         <form:input class="mt-2 w-100" type="text" path="name" required="required"/>
 
-        <label class="mt-3">Address:</label>
+        <label class="mt-4">Address:</label>
         <form:input class="mt-2 w-100" type="text" path="address" required="required"/>
-        <p class="text-danger mt-2">
+        <p class="text-danger mt-1 mb-0" style="font-size: 14px;">
           <form:errors path="address"/>
         </p>
 
-        <label class="mt-2">Title:</label>
+        <label class="mt-3">Title:</label>
         <form:input class="mt-2 w-100" type="text" path="title" required="required"/>
-        <p class="text-danger mt-2">
-          <form:errors path="address"/>
+        <p class="text-danger mt-1 mb-0" style="font-size: 14px;">
+          <form:errors path="title"/>
         </p>
 
-        <label class="mt-2">Salary:</label>
+        <label class="mt-3">Salary:</label>
         <form:input class="mt-2 w-100" type="number" path="salary" required="required"/>
 
         <button type="submit" class="btn btn-md btn-success mt-4">Submit</button>

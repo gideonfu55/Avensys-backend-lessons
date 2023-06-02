@@ -46,7 +46,7 @@
           </tbody>
         </table>
 
-      <a href="add-employee" class="btn btn-success mx-3 mt-2">Add new employee</a>
+      <a href="add-employee" class="btn btn-success mx-2 mt-2">Add new employee</a>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
