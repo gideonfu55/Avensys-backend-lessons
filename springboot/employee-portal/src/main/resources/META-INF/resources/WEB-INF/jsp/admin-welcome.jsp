@@ -1,9 +1,10 @@
 <html>
   <head>
-    <title>Welcome Page</title>
+    <title>Admin Welcome Page</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
   </head>
+  
   <body>
     <section class="vh-100" style="background-color: #508bfc;">
       <div class="container py-5 h-100">

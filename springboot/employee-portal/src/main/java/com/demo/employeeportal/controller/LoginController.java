@@ -26,12 +26,19 @@ public class LoginController {
     return "login";
   }
 
-  // Login Authentication for Welcome Page
+  // Login Authentication for Welcome Page - Admin and Employee
   @RequestMapping(value = "login", method = RequestMethod.POST)
-  public String loginToWelcomePage(@RequestParam String name, @RequestParam String password, ModelMap model) {
-    if (authenticationService.authenticateUser(name, password)) {
-      model.put("name", name);
-      return "welcome";
+  public String loginToWelcomePage(@RequestParam String name, @RequestParam String password, @RequestParam String tab, ModelMap model) {
+    if (tab.equals("admin")) {
+      if (authenticationService.authenticateAdmin(name, password)) {
+        model.put("name", name);
+        return "admin-welcome";
+      }
+    } else if (tab.equals("employee")) {
+      if (authenticationService.authenticateEmployee(name, password)) {
+        model.put("name", name);
+        return "employee-welcome";
+      }
     }
 
     model.put("errorMessage", "Invalid credentials. Please try again.");
