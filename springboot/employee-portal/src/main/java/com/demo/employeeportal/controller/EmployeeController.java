@@ -1,6 +1,7 @@
 package com.demo.employeeportal.controller;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -57,6 +58,26 @@ public class EmployeeController {
   @RequestMapping("delete-employee")
   public String deleteEmployee(@RequestParam Long id) {
     employeeService.deleteEmployeeById(id);
+    return "redirect:employeelist";
+  }
+
+  // Update Employee - Return to Add Employee Page with existing details:
+  @RequestMapping(value = "update-employee", method= RequestMethod.GET)
+  public String showUpdateEmployee(@RequestParam Long id, ModelMap model) {
+    Optional<Employee> employee = employeeService.findEmployeeById(id);
+    model.addAttribute("employee", employee);
+    return "employee";
+  }
+
+  // Update Employee - Edit current details and return to Employee List Page:
+  @RequestMapping(value = "update-employee", method = RequestMethod.POST)
+  public String updateEmployee(ModelMap model, @Valid Employee employee, BindingResult result) {
+    
+    if (result.hasErrors()) {
+      return "employee";
+    }
+
+    employeeService.updateEmployee(employee);
     return "redirect:employeelist";
   }
 
