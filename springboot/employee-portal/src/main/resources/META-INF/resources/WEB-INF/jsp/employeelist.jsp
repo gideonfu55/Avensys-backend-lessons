@@ -17,8 +17,8 @@
     <h6 class="pt-3 fw-bold">Hi ${name}, welcome to the employee list page! <br><br>Current access level: add, update and delete.</h6>
     <hr>
 
-    <div class="container border border-info border-3 rounded-3 mt-4 p-4">
-      <h6 class="fw-bold">This is the list of current employees in the portal:</h6>
+    <div class="container border border-info border-3 rounded-3 mt-4 py-4 px-5">
+      <h6 class="fw-bold">List of employees in the portal:</h6>
         <table class="table mt-3">
           <thead>
             <tr class="table-success">

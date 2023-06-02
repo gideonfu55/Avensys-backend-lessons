@@ -12,7 +12,7 @@
           <div class="col-12 col-md-8 col-lg-6 col-xl-6">
             <div class="card shadow-2-strong" style="border-radius: 1rem;">
               <div class="card-body p-5 text-center">
-                <h5 style="color:green; display: inline-block" class="mb-2">Credentials verified</h5>
+                <h5 style="color:green; display: inline-block" class="mb-2">Credentials verified:</h5>
                 <div class="mb-4 mx-2 p-1" style="display: inline-block; width: 120px; border-radius: 5px; background-color: red; color: white;">
                   Employee
                 </div>

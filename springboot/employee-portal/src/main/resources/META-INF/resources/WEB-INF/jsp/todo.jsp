@@ -18,22 +18,22 @@
 
         <label class="fw-bold">Description:</label>
         <form:input class="mt-2 w-100" type="text" path="description" required="required"/>
-        <span class="text-danger" style="font-size: 14px;">
+        <p class="text-danger mt-1 mb-0" style="font-size: 15px;">
           <form:errors path="description"/>
-        </span>
+        </p>
 
-        <br><br>
+        <br>
         <label class="d-block fw-bold">Target Date:</label>
         <form:input class="mt-2" type="date" path="targetDate" required="required"/>
-        <span class="text-danger mx-2" style="font-size: 14px">
+        <p class="text-danger mt-1 mb-0" style="font-size: 15px;">
           <form:errors path="targetDate"/>
-        </span>
+        </p>
 
         <form:input type="hidden" path="done"/>
 
         <br>
-        <button type="submit" class="btn btn-md btn-success mt-5">Submit</button>
-        <a href="todolist" class="btn btn-md btn-warning mt-5 mx-2">Return to Todolist</a>
+        <button type="submit" class="btn btn-md btn-success mt-3">Submit</button>
+        <a href="todolist" class="btn btn-md btn-warning mt-3 mx-2">Return to Todolist</a>
       </form:form>
     </div>
 
