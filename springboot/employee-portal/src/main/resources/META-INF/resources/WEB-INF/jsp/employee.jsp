@@ -9,8 +9,8 @@
   </head>
 
   <body>
-    <div class="container border border-info border-3 rounded-3 mt-3 p-4">
-      <h3 class="fw-bold">Enter Employee Details</h3>
+    <div class="container border border-info border-3 rounded-3 mt-3 p-3">
+      <h3 class="fw-bold mb-0">Enter Employee Details</h3>
       <form:form method="post" modelAttribute="employee">
         <br>
         <form:input type="hidden" path="id"/>
@@ -31,7 +31,7 @@
         </p>
 
         <label class="mt-3">Salary:</label>
-        <form:input class="mt-2 w-100" type="number" path="salary" required="required"/>
+        <form:input class="d-block mt-2 w-20" type="number" path="salary" required="required"/>
         <p class="text-danger mt-1 mb-0" style="font-size: 14px;">
           <form:errors path="salary"/>
         </p>
